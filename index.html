@@ -1,1502 +1,2550 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f8f7f2">
-  <meta name="description" content="Bloomlinx Agency connects beauty brands with relevant creators to develop thoughtful creator marketing partnerships across Africa and international markets.">
-  <meta property="og:title" content="Bloomlinx Agency | Beauty, Meet Influence">
-  <meta property="og:description" content="Connecting beauty brands with the creators shaping what comes next.">
-  <meta property="og:type" content="website">
-  <title>Bloomlinx Agency | Beauty, Meet Influence</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<title>Bloomlinx Agency | Beauty Creator Marketing</title>
 
-  <style>
-    :root {
-      --paper: #f8f7f2;
-      --white: #fffefa;
-      --ink: #20251f;
-      --muted: #73786e;
-      --green: #244d38;
-      --green-dark: #193828;
-      --sage: #dce4d7;
-      --line: #e4e3da;
-      --serif: "Playfair Display", Georgia, serif;
-      --sans: "DM Sans", Arial, sans-serif;
-      --max: 1220px;
+<meta name="description" content="Bloomlinx Agency connects beauty brands with relevant creators across Africa and international markets through thoughtful creator marketing strategy.">
+<meta name="keywords" content="beauty creator marketing, influencer marketing, beauty influencers, creator agency, Africa creators, beauty brands">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --ink: #202321;
+    --deep: #17201b;
+    --forest: #33463d;
+    --sage: #91a399;
+    --soft-sage: #dce4df;
+    --blush: #e9b8aa;
+    --cream: #f7f4ee;
+    --paper: #fcfbf8;
+    --white: #ffffff;
+    --muted: #727873;
+    --line: rgba(32,35,33,.13);
+    --serif: "Playfair Display", Georgia, serif;
+    --sans: "DM Sans", Arial, sans-serif;
+    --modern: "Manrope", Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+::selection {
+    background: var(--blush);
+    color: var(--ink);
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+.container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-family: var(--modern);
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--forest);
+}
+
+.serif {
+    font-family: var(--serif);
+}
+
+.section {
+    padding: 150px 0;
+}
+
+.rule {
+    width: 100%;
+    height: 1px;
+    background: var(--line);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: .35s ease;
+    padding: 22px 0;
+}
+
+.site-header.scrolled {
+    background: rgba(252,251,248,.9);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--line);
+    padding: 13px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.logo-wrap img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-links a {
+    position: relative;
+    transition: .25s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 1px;
+    background: var(--ink);
+    transition: .3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--ink);
+    color: white;
+    padding: 13px 19px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.nav-cta:hover {
+    background: var(--forest);
+    transform: translateY(-2px);
+}
+
+.menu-btn {
+    display: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    padding: 160px 0 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.02fr .98fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-family: var(--serif);
+    font-size: clamp(60px, 7vw, 105px);
+    font-weight: 400;
+    line-height: .92;
+    letter-spacing: -.055em;
+    max-width: 780px;
+    margin: 24px 0 30px;
+}
+
+.hero-title em {
+    color: var(--forest);
+}
+
+.hero-description {
+    max-width: 540px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 38px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 23px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.btn-dark {
+    background: var(--ink);
+    color: white;
+}
+
+.btn-dark:hover {
+    background: var(--forest);
+    transform: translateY(-3px);
+}
+
+.btn-light {
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.5);
+}
+
+.btn-light:hover {
+    border-color: var(--ink);
+    transform: translateY(-3px);
+}
+
+.hero-visual {
+    position: relative;
+    min-height: 650px;
+}
+
+.hero-image-main {
+    width: 78%;
+    height: 580px;
+    margin-left: auto;
+    object-fit: cover;
+    filter: saturate(.8);
+}
+
+.hero-image-small {
+    position: absolute;
+    width: 42%;
+    height: 270px;
+    object-fit: cover;
+    left: 0;
+    bottom: 15px;
+    border: 12px solid var(--paper);
+}
+
+.hero-caption {
+    position: absolute;
+    right: -5px;
+    bottom: -10px;
+    background: var(--ink);
+    color: white;
+    padding: 20px 22px;
+    width: 210px;
+}
+
+.hero-caption small {
+    display: block;
+    color: #bfc8c2;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 9px;
+    margin-bottom: 8px;
+}
+
+.hero-caption strong {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 400;
+}
+
+/* =========================
+   MARQUEE
+========================= */
+
+.marquee {
+    overflow: hidden;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+    white-space: nowrap;
+}
+
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 34px;
+    animation: marquee 28s linear infinite;
+}
+
+.marquee span {
+    font-family: var(--serif);
+    font-size: 21px;
+    color: #777d78;
+}
+
+.marquee .dot {
+    color: var(--blush);
+    font-family: var(--sans);
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    background: var(--cream);
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: .7fr 1.3fr;
+    gap: 100px;
+}
+
+.intro-title {
+    font-family: var(--serif);
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.04em;
+}
+
+.intro-copy {
+    max-width: 750px;
+}
+
+.intro-copy p {
+    font-size: 22px;
+    line-height: 1.65;
+    color: #454b47;
+    margin-bottom: 30px;
+}
+
+.intro-copy p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   STRATEGY
+========================= */
+
+.strategy {
+    background: var(--deep);
+    color: white;
+}
+
+.strategy .eyebrow {
+    color: #b9c7bf;
+}
+
+.strategy-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: end;
+    margin-bottom: 80px;
+}
+
+.strategy-title {
+    font-family: var(--serif);
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: .95;
+    font-weight: 400;
+    max-width: 700px;
+    letter-spacing: -.045em;
+}
+
+.strategy-header p {
+    max-width: 330px;
+    color: #aeb8b2;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.strategy-flow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid rgba(255,255,255,.18);
+    border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+.flow-item {
+    padding: 36px 25px 42px;
+    border-right: 1px solid rgba(255,255,255,.18);
+    position: relative;
+}
+
+.flow-item:last-child {
+    border-right: 0;
+}
+
+.flow-number {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--blush);
+    margin-bottom: 45px;
+}
+
+.flow-item h3 {
+    font-family: var(--serif);
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.flow-item p {
+    color: #aeb8b2;
+    line-height: 1.65;
+    font-size: 13px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+.services-title {
+    font-family: var(--serif);
+    font-size: clamp(48px, 6vw, 78px);
+    font-weight: 400;
+    line-height: .95;
+    letter-spacing: -.045em;
+}
+
+.services-header p {
+    max-width: 360px;
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.service-card {
+    min-height: 340px;
+    padding: 35px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+    transition: .4s ease;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--soft-sage);
+    right: -100px;
+    bottom: -100px;
+    transition: .5s ease;
+}
+
+.service-card:hover::before {
+    width: 280px;
+    height: 280px;
+}
+
+.service-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.service-number {
+    font-family: var(--serif);
+    font-size: 15px;
+    color: var(--sage);
+}
+
+.service-card h3 {
+    font-family: var(--serif);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-bottom: 18px;
+}
+
+.service-card p {
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 330px;
+    font-size: 14px;
+}
+
+.service-arrow {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 24px;
+    transition: .3s ease;
+}
+
+.service-card:hover .service-arrow {
+    transform: translate(4px,-4px);
+}
+
+/* =========================
+   IMAGE STORY
+========================= */
+
+.image-story {
+    padding-top: 40px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.story-image-large {
+    width: 100%;
+    height: 690px;
+    object-fit: cover;
+}
+
+.story-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 35px;
+}
+
+.story-image-small {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-card {
+    background: var(--forest);
+    color: white;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-card h2 {
+    font-family: var(--serif);
+    font-size: 47px;
+    line-height: 1;
+    font-weight: 400;
+    max-width: 420px;
+}
+
+.story-card p {
+    color: #c4cec8;
+    line-height: 1.7;
+    font-size: 14px;
+    max-width: 390px;
+}
+
+/* =========================
+   BRAND / CREATOR
+========================= */
+
+.audience {
+    background: var(--cream);
+}
+
+.audience-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 75px;
+}
+
+.audience-title {
+    font-family: var(--serif);
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: 400;
+    line-height: .98;
+    margin-top: 20px;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.audience-card {
+    min-height: 600px;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.audience-card.brands {
+    background: var(--ink);
+    color: white;
+}
+
+.audience-card.creators {
+    background: white;
+}
+
+.audience-card h3 {
+    font-family: var(--serif);
+    font-size: 50px;
+    font-weight: 400;
+    line-height: .95;
+    margin: 45px 0 25px;
+}
+
+.audience-card p {
+    max-width: 430px;
+    line-height: 1.75;
+    font-size: 14px;
+}
+
+.brands p {
+    color: #b7c0ba;
+}
+
+.creators p {
+    color: var(--muted);
+}
+
+.audience-list {
+    margin-top: 50px;
+    display: grid;
+    gap: 13px;
+}
+
+.audience-list div {
+    border-top: 1px solid currentColor;
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.brands .audience-list div {
+    border-color: rgba(255,255,255,.2);
+}
+
+.audience-list span:last-child {
+    color: var(--blush);
+}
+
+/* =========================
+   CREATOR NETWORK
+========================= */
+
+.network {
+    background: var(--paper);
+}
+
+.network-header {
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    gap: 80px;
+    align-items: end;
+    margin-bottom: 70px;
+}
+
+.network-title {
+    font-family: var(--serif);
+    font-size: clamp(50px, 6vw, 82px);
+    font-weight: 400;
+    line-height: .92;
+    letter-spacing: -.045em;
+}
+
+.network-description {
+    color: var(--muted);
+    line-height: 1.75;
+    font-size: 14px;
+}
+
+.creator-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--cream);
+}
+
+.creator-photo {
+    height: 590px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.creator-info {
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.creator-info h3 {
+    font-family: var(--serif);
+    font-size: 54px;
+    font-weight: 400;
+    line-height: .95;
+}
+
+.creator-info .handle {
+    color: var(--forest);
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.creator-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--line);
+}
+
+.meta-box {
+    padding: 25px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.meta-box:nth-child(odd) {
+    margin-right: 25px;
+}
+
+.meta-box:nth-child(even) {
+    padding-left: 25px;
+    border-left: 1px solid var(--line);
+}
+
+.meta-label {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    margin-bottom: 7px;
+}
+
+.meta-value {
+    font-family: var(--serif);
+    font-size: 20px;
+}
+
+/* =========================
+   DIFFERENCE
+========================= */
+
+.difference {
+    background: var(--cream);
+}
+
+.difference-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 100px;
+}
+
+.difference-title {
+    font-family: var(--serif);
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: .94;
+    font-weight: 400;
+}
+
+.difference-copy {
+    max-width: 680px;
+}
+
+.difference-copy > p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #464c48;
+    margin-bottom: 55px;
+}
+
+.principles {
+    border-top: 1px solid var(--line);
+}
+
+.principle {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+}
+
+.principle-number {
+    color: var(--sage);
+    font-family: var(--serif);
+}
+
+.principle h4 {
+    font-family: var(--serif);
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.principle p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process {
+    background: white;
+}
+
+.process-header {
+    margin-bottom: 80px;
+}
+
+.process-title {
+    font-family: var(--serif);
+    font-size: clamp(52px, 6vw, 84px);
+    font-weight: 400;
+    line-height: .93;
+    max-width: 750px;
+    margin-top: 20px;
+}
+
+.process-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line);
+}
+
+.process-item {
+    padding: 40px 25px 30px 0;
+    margin-right: 25px;
+    border-right: 1px solid var(--line);
+}
+
+.process-item:last-child {
+    border-right: 0;
+}
+
+.process-num {
+    font-family: var(--serif);
+    color: var(--blush);
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.process-item h3 {
+    font-family: var(--serif);
+    font-size: 29px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.process-item p {
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+/* =========================
+   MANIFESTO
+========================= */
+
+.manifesto {
+    background: var(--deep);
+    color: white;
+    text-align: center;
+    padding: 190px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.manifesto::before,
+.manifesto::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 50%;
+}
+
+.manifesto::before {
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    top: -250px;
+}
+
+.manifesto::after {
+    width: 700px;
+    height: 700px;
+    right: -400px;
+    bottom: -350px;
+}
+
+.manifesto .eyebrow {
+    color: #aab8b0;
+}
+
+.manifesto h2 {
+    font-family: var(--serif);
+    font-size: clamp(52px, 7vw, 100px);
+    font-weight: 400;
+    line-height: .96;
+    max-width: 1050px;
+    margin: 30px auto;
+    letter-spacing: -.05em;
+}
+
+.manifesto h2 em {
+    color: var(--blush);
+}
+
+.manifesto p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #adb8b1;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.contact {
+    padding: 150px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    gap: 100px;
+    align-items: end;
+}
+
+.contact-title {
+    font-family: var(--serif);
+    font-size: clamp(58px, 7vw, 105px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.055em;
+}
+
+.contact-title em {
+    color: var(--forest);
+}
+
+.contact-right {
+    max-width: 430px;
+}
+
+.contact-right p {
+    color: var(--muted);
+    line-height: 1.75;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+.contact-links {
+    display: grid;
+    gap: 11px;
+}
+
+.contact-link {
+    border-bottom: 1px solid var(--line);
+    padding: 17px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    transition: .3s ease;
+}
+
+.contact-link:hover {
+    padding-left: 7px;
+    color: var(--forest);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--ink);
+    color: white;
+    padding: 70px 0 30px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr .7fr;
+    gap: 70px;
+    padding-bottom: 70px;
+}
+
+.footer-brand img {
+    width: 180px;
+    background: white;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.footer-brand p {
+    max-width: 330px;
+    color: #9fa8a2;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+.footer-column h4 {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    color: #9fa8a2;
+    margin-bottom: 22px;
+}
+
+.footer-column a {
+    display: block;
+    margin-bottom: 13px;
+    font-size: 13px;
+    color: #e8ebe9;
+    transition: .2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--blush);
+}
+
+.footer-bottom {
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #7f8983;
+    font-size: 11px;
+}
+
+/* =========================
+   REVEAL ANIMATION
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links,
+    .nav-cta {
+        display: none;
     }
 
-    * { box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 95px;
+    .menu-btn {
+        display: block;
     }
 
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--sans);
-      -webkit-font-smoothing: antialiased;
-      line-height: 1.6;
+    .hero-grid,
+    .intro-grid,
+    .difference-grid,
+    .network-header,
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 
-    body.menu-open { overflow: hidden; }
-
-    a { color: inherit; text-decoration: none; }
-
-    button, input, textarea, select { font: inherit; }
-
-    button, a { -webkit-tap-highlight-color: transparent; }
-
-    img { display: block; max-width: 100%; }
-
-    ::selection {
-      background: var(--green);
-      color: white;
-    }
-
-    .container {
-      width: min(var(--max), calc(100% - 64px));
-      margin-inline: auto;
-    }
-
-    .eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--green);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .19em;
-      text-transform: uppercase;
-    }
-
-    .eyebrow::before {
-      width: 22px;
-      height: 1px;
-      background: currentColor;
-      content: "";
-    }
-
-    .serif { font-family: var(--serif); }
-
-    .section-heading {
-      max-width: 720px;
-      margin: 20px 0;
-      font-family: var(--serif);
-      font-size: clamp(38px, 5vw, 65px);
-      font-weight: 400;
-      letter-spacing: -.045em;
-      line-height: 1.12;
-    }
-
-    .section-heading em {
-      color: var(--green);
-      font-weight: 400;
-    }
-
-    .section-copy {
-      max-width: 520px;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.9;
-    }
-
-    .button {
-      display: inline-flex;
-      min-height: 50px;
-      align-items: center;
-      justify-content: center;
-      gap: 18px;
-      padding: 0 23px;
-      border: 1px solid var(--green);
-      background: var(--green);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .045em;
-      transition: background .25s, color .25s, transform .25s;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-      background: var(--green-dark);
-    }
-
-    .button-outline {
-      background: transparent;
-      color: var(--green);
-    }
-
-    .button-outline:hover {
-      background: var(--green);
-      color: white;
-    }
-
-    .arrow { font-size: 17px; line-height: 1; }
-
-    /* Navigation */
-
-    .site-header {
-      position: sticky;
-      z-index: 100;
-      top: 0;
-      border-bottom: 1px solid rgba(32,37,31,.09);
-      background: rgba(248,247,242,.94);
-      backdrop-filter: blur(16px);
-    }
-
-    .nav {
-      display: flex;
-      min-height: 82px;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      display: inline-flex;
-      flex-shrink: 0;
-      align-items: center;
-      gap: 11px;
-    }
-
-    .brand-symbol {
-      display: grid;
-      width: 38px;
-      height: 38px;
-      place-items: center;
-      border: 1px solid var(--green);
-      border-radius: 50%;
-      color: var(--green);
-      font-family: var(--serif);
-      font-size: 22px;
-    }
-
-    .brand-name {
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: .13em;
-      line-height: 1.15;
-    }
-
-    .brand-subtitle {
-      display: block;
-      margin-top: 5px;
-      color: var(--muted);
-      font-size: 8px;
-      font-weight: 600;
-      letter-spacing: .17em;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: clamp(17px, 2.5vw, 35px);
-    }
-
-    .nav-links > a:not(.button) {
-      color: #4e534b;
-      font-size: 11px;
-      transition: color .2s;
-    }
-
-    .nav-links > a:not(.button):hover { color: var(--green); }
-
-    .nav-links .button {
-      min-height: 42px;
-      padding-inline: 17px;
-    }
-
-    .menu-toggle {
-      display: none;
-      width: 44px;
-      height: 44px;
-      border: 1px solid var(--line);
-      background: transparent;
-      color: var(--ink);
-      cursor: pointer;
-      font-size: 23px;
-    }
-
-    /* Hero */
-
-    .hero { padding: 55px 0 77px; }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.02fr .98fr;
-      align-items: center;
-      gap: clamp(32px, 6vw, 82px);
-    }
-
-    .hero-content { padding: 30px 0 36px; }
-
-    .hero h1 {
-      max-width: 680px;
-      margin: 24px 0;
-      font-family: var(--serif);
-      font-size: clamp(52px, 7.1vw, 91px);
-      font-weight: 400;
-      letter-spacing: -.065em;
-      line-height: .99;
-    }
-
-    .hero h1 em {
-      color: var(--green);
-      font-weight: 400;
-    }
-
-    .hero-copy {
-      max-width: 445px;
-      margin: 25px 0 30px;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.95;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .hero-note {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 36px;
-      color: var(--muted);
-      font-size: 10px;
-      letter-spacing: .04em;
-    }
-
-    .status-dot {
-      width: 7px;
-      height: 7px;
-      flex-shrink: 0;
-      border-radius: 50%;
-      background: #668667;
+    .hero {
+        padding-top: 130px;
     }
 
     .hero-visual {
-      position: relative;
-      min-height: 530px;
-      background: #e8e3d7;
+        min-height: 550px;
     }
 
-    .hero-image {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+    .strategy-flow {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .hero-image-credit {
-      position: absolute;
-      right: 14px;
-      bottom: 13px;
-      padding: 5px 9px;
-      background: rgba(255,254,250,.88);
-      color: #56584f;
-      font-size: 8px;
-      letter-spacing: .04em;
+    .flow-item:nth-child(2) {
+        border-right: 0;
     }
 
-    .image-stamp {
-      position: absolute;
-      top: 28px;
-      left: -27px;
-      display: grid;
-      width: 104px;
-      height: 104px;
-      align-content: center;
-      justify-items: center;
-      border-radius: 50%;
-      background: var(--green);
-      color: white;
-      text-align: center;
-      transform: rotate(-9deg);
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .image-stamp span:first-child {
-      font-family: var(--serif);
-      font-size: 27px;
-      line-height: 1.1;
+    .audience-grid,
+    .creator-feature {
+        grid-template-columns: 1fr;
     }
 
-    .image-stamp span:last-child {
-      margin-top: 5px;
-      font-size: 7px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
+    .creator-photo {
+        height: 520px;
+    }
+
+    .process-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        width: min(100% - 30px, 1240px);
+    }
+
+    .section {
+        padding: 95px 0;
+    }
+
+    .logo-wrap,
+    .logo-wrap img {
+        width: 125px;
+    }
+
+    .hero {
+        padding: 115px 0 50px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-visual {
+        min-height: 420px;
+    }
+
+    .hero-image-main {
+        height: 390px;
+        width: 82%;
+    }
+
+    .hero-image-small {
+        height: 180px;
+        width: 43%;
+        border-width: 8px;
     }
 
     .hero-caption {
-      position: absolute;
-      right: -18px;
-      bottom: 32px;
-      max-width: 205px;
-      padding: 20px 23px;
-      background: var(--white);
-      box-shadow: 0 12px 35px rgba(32,37,31,.07);
+        width: 175px;
+        padding: 15px;
     }
 
-    .hero-caption small {
-      color: var(--green);
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: .15em;
-      text-transform: uppercase;
+    .intro-grid,
+    .difference-grid {
+        gap: 45px;
     }
 
-    .hero-caption p {
-      margin: 8px 0 0;
-      font-family: var(--serif);
-      font-size: 20px;
-      line-height: 1.3;
+    .intro-copy p {
+        font-size: 17px;
     }
 
-    /* Intro strip */
-
-    .intro-strip {
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
+    .strategy-header,
+    .services-header {
+        display: block;
     }
 
-    .intro-inner {
-      display: flex;
-      min-height: 105px;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
+    .strategy-header p,
+    .services-header p {
+        margin-top: 25px;
     }
 
-    .intro-label {
-      color: var(--muted);
-      font-size: 10px;
-      letter-spacing: .13em;
-      text-transform: uppercase;
+    .strategy-flow,
+    .services-grid,
+    .process-row {
+        grid-template-columns: 1fr;
     }
 
-    .intro-words {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 12px 29px;
-      font-family: var(--serif);
-      font-size: clamp(17px, 2.2vw, 25px);
-    }
-
-    .intro-words span { white-space: nowrap; }
-
-    .intro-words span::after {
-      display: inline-block;
-      width: 5px;
-      height: 5px;
-      margin-left: 29px;
-      border-radius: 50%;
-      background: #a7b29d;
-      content: "";
-      vertical-align: middle;
-    }
-
-    .intro-words span:last-child::after { display: none; }
-
-    /* About */
-
-    .about { padding: 120px 0; }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: .82fr 1.18fr;
-      gap: clamp(40px, 9vw, 130px);
-    }
-
-    .about-side {
-      padding-top: 10px;
-    }
-
-    .about-side img {
-      width: 100%;
-      height: 390px;
-      margin-top: 35px;
-      object-fit: cover;
-      object-position: center;
-      background: #e7e3d8;
-    }
-
-    .about-content .section-heading { margin-top: 18px; }
-
-    .about-content > p {
-      max-width: 570px;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 2;
-    }
-
-    .text-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 20px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--green);
-      color: var(--green);
-      font-size: 11px;
-      font-weight: 700;
-    }
-
-    /* Services */
-
-    .services {
-      padding: 110px 0;
-      background: #efefe7;
-    }
-
-    .section-top {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 40px;
-      margin-bottom: 50px;
-    }
-
-    .section-top .section-heading { margin-bottom: 0; }
-
-    .section-top .section-copy { max-width: 345px; }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border-top: 1px solid #d8d9cf;
-      border-left: 1px solid #d8d9cf;
+    .flow-item {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.18);
     }
 
     .service-card {
-      min-height: 280px;
-      padding: 30px 27px;
-      border-right: 1px solid #d8d9cf;
-      border-bottom: 1px solid #d8d9cf;
-      transition: background .25s;
+        min-height: 300px;
     }
 
-    .service-card:hover { background: #f8f7f2; }
-
-    .service-number {
-      color: #7c8a78;
-      font-size: 10px;
-      letter-spacing: .1em;
+    .story-grid {
+        grid-template-columns: 1fr;
     }
 
-    .service-icon {
-      display: grid;
-      width: 43px;
-      height: 43px;
-      margin: 26px 0 22px;
-      place-items: center;
-      border: 1px solid #c7cec0;
-      border-radius: 50%;
-      color: var(--green);
-      font-size: 19px;
+    .story-image-large {
+        height: 450px;
     }
 
-    .service-card h3 {
-      margin: 0 0 11px;
-      font-family: var(--serif);
-      font-size: 25px;
-      font-weight: 400;
-      letter-spacing: -.025em;
+    .story-side {
+        grid-template-rows: auto auto;
     }
 
-    .service-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.9;
+    .story-image-small {
+        height: 300px;
     }
 
-    /* Audience panels */
-
-    .audiences { padding: 120px 0; }
-
-    .audience-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
+    .story-card {
+        min-height: 390px;
+        padding: 32px;
     }
 
     .audience-card {
-      position: relative;
-      display: flex;
-      min-height: 440px;
-      flex-direction: column;
-      justify-content: flex-end;
-      overflow: hidden;
-      padding: 38px;
-      background: #ddd9ce;
-      color: white;
-      isolation: isolate;
+        min-height: 520px;
+        padding: 32px;
     }
-
-    .audience-card::before {
-      position: absolute;
-      z-index: -1;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(13,29,19,.04) 0%, rgba(13,29,19,.83) 100%);
-      content: "";
-      transition: opacity .3s;
-    }
-
-    .audience-card img {
-      position: absolute;
-      z-index: -2;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform .7s;
-    }
-
-    .audience-card:hover img { transform: scale(1.04); }
-
-    .audience-card .eyebrow { color: #e0e8d8; }
 
     .audience-card h3 {
-      max-width: 440px;
-      margin: 17px 0 12px;
-      font-family: var(--serif);
-      font-size: clamp(35px, 4vw, 49px);
-      font-weight: 400;
-      letter-spacing: -.035em;
-      line-height: 1.1;
+        font-size: 44px;
     }
 
-    .audience-card p {
-      max-width: 390px;
-      margin: 0 0 24px;
-      color: rgba(255,255,255,.83);
-      font-size: 13px;
-      line-height: 1.85;
+    .creator-photo {
+        height: 420px;
     }
 
-    .audience-card .text-link {
-      align-self: flex-start;
-      border-color: rgba(255,255,255,.75);
-      color: white;
+    .creator-info {
+        padding: 35px 25px;
     }
 
-    /* Process */
-
-    .process {
-      padding: 115px 0;
-      background: var(--green-dark);
-      color: white;
+    .creator-info h3 {
+        font-size: 45px;
+        margin-bottom: 50px;
     }
 
-    .process .eyebrow { color: #c9d9c6; }
-
-    .process .section-heading { max-width: 690px; }
-
-    .process .section-heading em { color: #c9d9c6; }
-
-    .process .section-copy { color: rgba(255,255,255,.67); }
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      margin-top: 65px;
-      border-top: 1px solid rgba(255,255,255,.22);
+    .network-header {
+        gap: 35px;
     }
 
-    .process-step {
-      position: relative;
-      min-height: 220px;
-      padding: 28px 22px 20px 0;
+    .process-item {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        margin-right: 0;
     }
 
-    .process-step:not(:first-child) { padding-left: 22px; }
-
-    .process-step:not(:last-child) {
-      border-right: 1px solid rgba(255,255,255,.18);
+    .manifesto {
+        padding: 120px 0;
     }
 
-    .process-step:not(:first-child) { border-left: 0; }
-
-    .process-step .number {
-      color: #b8cbb3;
-      font-size: 10px;
-      letter-spacing: .14em;
+    .manifesto h2 {
+        font-size: 53px;
     }
 
-    .process-step h3 {
-      margin: 36px 0 12px;
-      font-family: var(--serif);
-      font-size: 26px;
-      font-weight: 400;
+    .contact-grid {
+        gap: 50px;
     }
 
-    .process-step p {
-      margin: 0;
-      color: rgba(255,255,255,.66);
-      font-size: 12px;
-      line-height: 1.85;
+    .contact-title {
+        font-size: 63px;
     }
 
-    /* Network */
-
-    .network { padding: 120px 0; }
-
-    .network-grid {
-      display: grid;
-      grid-template-columns: 1fr .85fr;
-      align-items: center;
-      gap: 75px;
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 45px;
     }
-
-    .network-visual {
-      display: grid;
-      min-height: 410px;
-      place-items: center;
-      padding: 30px;
-      background: #e6e8dc;
-    }
-
-    .network-visual img {
-      width: 100%;
-      height: 350px;
-      object-fit: cover;
-      background: #d7d9cc;
-    }
-
-    .network-content .section-heading { font-size: clamp(39px, 4.7vw, 59px); }
-
-    .network-content p {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.95;
-    }
-
-    .network-points {
-      display: grid;
-      gap: 0;
-      margin: 26px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .network-point {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .network-point .check {
-      color: var(--green);
-      font-size: 16px;
-    }
-
-    .network-point strong {
-      display: block;
-      margin-bottom: 3px;
-      font-size: 12px;
-    }
-
-    .network-point span:last-child {
-      color: var(--muted);
-      font-size: 11px;
-      line-height: 1.7;
-    }
-
-    /* CTA */
-
-    .final-cta {
-      padding: 90px 0;
-      background: #e9e9df;
-    }
-
-    .cta-inner {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      gap: 35px;
-    }
-
-    .cta-inner .section-heading {
-      max-width: 720px;
-      margin: 17px 0;
-      font-size: clamp(42px, 5.7vw, 71px);
-    }
-
-    .cta-inner .section-copy { max-width: 520px; }
-
-    .cta-action {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 15px;
-    }
-
-    .cta-action small {
-      max-width: 210px;
-      color: var(--muted);
-      font-size: 10px;
-      line-height: 1.8;
-    }
-
-    /* Footer */
-
-    .site-footer {
-      padding: 65px 0 25px;
-      background: #1d2821;
-      color: white;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.3fr .7fr .8fr;
-      gap: 50px;
-      padding-bottom: 55px;
-    }
-
-    .footer-brand .brand-symbol { border-color: #c9d9c6; color: #c9d9c6; }
-
-    .footer-brand .brand-subtitle { color: #a8b3a6; }
-
-    .footer-brand p {
-      max-width: 320px;
-      margin-top: 23px;
-      color: rgba(255,255,255,.63);
-      font-size: 12px;
-      line-height: 1.9;
-    }
-
-    .footer-column h4 {
-      margin: 7px 0 20px;
-      color: #c9d9c6;
-      font-size: 10px;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-
-    .footer-column a {
-      display: block;
-      width: fit-content;
-      margin: 12px 0;
-      color: rgba(255,255,255,.76);
-      font-size: 12px;
-      overflow-wrap: anywhere;
-      transition: color .2s;
-    }
-
-    .footer-column a:hover { color: white; }
 
     .footer-bottom {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
-      padding-top: 22px;
-      border-top: 1px solid rgba(255,255,255,.15);
-      color: rgba(255,255,255,.54);
-      font-size: 10px;
-    }
-
-    .footer-social {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
-    }
-
-    .footer-social a:hover { color: white; }
-
-    /* Animation */
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity .7s ease, transform .7s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        scroll-behavior: auto !important;
-        animation-duration: .01ms !important;
-        transition-duration: .01ms !important;
-      }
-
-      .reveal {
-        opacity: 1;
-        transform: none;
-      }
-    }
-
-    /* Tablet */
-
-    @media (max-width: 900px) {
-      .container { width: min(100% - 42px, var(--max)); }
-
-      .nav { min-height: 74px; }
-
-      .nav-links { gap: 16px; }
-
-      .nav-links > a:not(.button) { font-size: 10px; }
-
-      .hero-grid { gap: 30px; }
-
-      .hero h1 { font-size: clamp(51px, 7vw, 72px); }
-
-      .hero-visual { min-height: 450px; }
-
-      .image-stamp { left: -18px; width: 85px; height: 85px; }
-
-      .hero-caption { right: -10px; }
-
-      .about-grid { gap: 48px; }
-
-      .service-card { padding: 24px 20px; }
-
-      .network-grid { gap: 42px; }
-
-      .process-step:not(:first-child) { padding-left: 16px; }
-
-      .process-step { padding-right: 15px; }
-    }
-
-    /* Mobile */
-
-    @media (max-width: 680px) {
-      html { scroll-padding-top: 76px; }
-
-      .container { width: calc(100% - 36px); }
-
-      .nav { min-height: 70px; }
-
-      .brand-symbol { width: 34px; height: 34px; font-size: 20px; }
-
-      .brand-name { font-size: 15px; }
-
-      .brand-subtitle { font-size: 7px; }
-
-      .menu-toggle {
-        display: grid;
-        place-items: center;
-      }
-
-      .nav-links {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        left: 0;
-        display: none;
-        align-items: stretch;
-        gap: 0;
-        padding: 10px 18px 22px;
-        border-bottom: 1px solid var(--line);
-        background: var(--paper);
-      }
-
-      .nav-links.open { display: flex; flex-direction: column; }
-
-      .nav-links > a:not(.button) {
-        padding: 15px 4px;
-        border-bottom: 1px solid var(--line);
-        font-size: 13px;
-      }
-
-      .nav-links .button { margin-top: 15px; }
-
-      .hero { padding: 35px 0 50px; }
-
-      .hero-grid { grid-template-columns: 1fr; gap: 38px; }
-
-      .hero-content { padding: 12px 0 0; }
-
-      .hero h1 {
-        max-width: 520px;
-        margin: 22px 0;
-        font-size: clamp(54px, 14vw, 76px);
-      }
-
-      .hero-copy { font-size: 13px; }
-
-      .hero-actions { align-items: stretch; }
-
-      .hero-actions .button { flex: 1; padding-inline: 12px; }
-
-      .hero-note { margin-top: 25px; }
-
-      .hero-visual { min-height: 440px; margin: 0 8px 0 10px; }
-
-      .image-stamp { top: 20px; left: -10px; }
-
-      .hero-caption { right: -7px; bottom: 18px; max-width: 180px; padding: 16px; }
-
-      .hero-caption p { font-size: 18px; }
-
-      .intro-inner {
-        min-height: 120px;
-        align-items: flex-start;
         flex-direction: column;
-        justify-content: center;
-        gap: 14px;
-        padding-block: 22px;
-      }
-
-      .intro-words {
-        justify-content: flex-start;
-        gap: 10px 15px;
-        font-size: 19px;
-      }
-
-      .intro-words span::after { margin-left: 15px; }
-
-      .about, .audiences, .network { padding: 78px 0; }
-
-      .about-grid { grid-template-columns: 1fr; gap: 35px; }
-
-      .about-side img { height: 310px; margin-top: 24px; }
-
-      .section-heading { font-size: clamp(39px, 10vw, 53px); }
-
-      .about-content > p { font-size: 13px; }
-
-      .services { padding: 78px 0; }
-
-      .section-top { align-items: flex-start; flex-direction: column; gap: 15px; margin-bottom: 30px; }
-
-      .section-top .section-copy { margin-top: 0; }
-
-      .service-grid { grid-template-columns: 1fr; }
-
-      .service-card { min-height: 0; padding: 25px; }
-
-      .service-icon { margin: 19px 0 16px; }
-
-      .audience-grid { grid-template-columns: 1fr; gap: 15px; }
-
-      .audience-card { min-height: 420px; padding: 26px; }
-
-      .process { padding: 78px 0; }
-
-      .process-grid { grid-template-columns: 1fr 1fr; margin-top: 40px; }
-
-      .process-step { min-height: 205px; padding: 22px 16px 24px 0; }
-
-      .process-step:not(:first-child) { padding-left: 16px; }
-
-      .process-step:nth-child(2) { border-right: 0; }
-
-      .process-step:nth-child(3) { border-top: 1px solid rgba(255,255,255,.18); }
-
-      .process-step:nth-child(4) { border-top: 1px solid rgba(255,255,255,.18); }
-
-      .process-step h3 { margin-top: 27px; font-size: 23px; }
-
-      .network-grid { grid-template-columns: 1fr; gap: 32px; }
-
-      .network-visual { min-height: 300px; padding: 17px; }
-
-      .network-visual img { height: 275px; }
-
-      .network-content .section-heading { font-size: 44px; }
-
-      .final-cta { padding: 70px 0; }
-
-      .cta-inner { grid-template-columns: 1fr; gap: 22px; }
-
-      .cta-inner .section-heading { font-size: clamp(44px, 11vw, 59px); }
-
-      .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px 20px; padding-bottom: 35px; }
-
-      .footer-brand { grid-column: 1 / -1; }
-
-      .site-footer { padding-top: 45px; }
-
-      .footer-bottom { align-items: flex-start; flex-direction: column; }
     }
-
-    @media (max-width: 360px) {
-      .container { width: calc(100% - 28px); }
-
-      .hero h1 { font-size: 51px; }
-
-      .hero-actions { flex-direction: column; }
-
-      .hero-visual { min-height: 365px; }
-
-      .footer-grid { grid-template-columns: 1fr; }
-
-      .footer-brand { grid-column: auto; }
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Bloomlinx Agency home">
-        <span class="brand-symbol">B</span>
-        <span>
-          <span class="brand-name">BLOOMLINX</span>
-          <span class="brand-subtitle">Beauty Creator Marketing</span>
-        </span>
-      </a>
 
-      <button class="menu-toggle" id="menuToggle" type="button"
-        aria-label="Open navigation menu" aria-expanded="false"
-        aria-controls="navLinks">☰</button>
+<!-- =========================
+     HEADER
+========================= -->
 
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#services">What We Do</a>
-        <a href="#creators">For Creators</a>
-        <a href="#process">Our Approach</a>
-        <a class="button" href="#contact">Partner With Us <span class="arrow">↗</span></a>
-      </div>
-    </nav>
-  </header>
+<header class="site-header" id="header">
+    <div class="container nav">
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <div class="eyebrow">Beauty meets influence</div>
-          <h1>Where beauty finds its <em>people.</em></h1>
-          <p class="hero-copy">
-            We connect beauty brands with relevant creators to explore meaningful
-            partnerships, develop thoughtful campaign ideas and bring products
-            closer to the audiences they are made for.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="#contact">Let's Work Together <span class="arrow">↗</span></a>
-            <a class="button button-outline" href="#services">Discover Bloomlinx <span class="arrow">↓</span></a>
-          </div>
-          <div class="hero-note">
-            <span class="status-dot"></span>
-            <span>Built in Africa. Open to the world.</span>
-          </div>
+        <a href="#top" class="logo-wrap">
+            <img src="images/bloomlinx-logo.png" alt="Bloomlinx Agency">
+        </a>
+
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#network">Creators</a>
+            <a href="#approach">Approach</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-cta">
+            Start a conversation
+            <span>↗</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<main id="top">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+
+            <div class="eyebrow">
+                Beauty × Creators × Culture
+            </div>
+
+            <h1 class="hero-title">
+                Where beauty
+                <em>finds influence.</em>
+            </h1>
+
+            <p class="hero-description">
+                Bloomlinx is a beauty creator marketing agency connecting
+                ambitious brands with relevant creators across Africa and
+                international markets.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-dark">
+                    Work with Bloomlinx
+                    <span>↗</span>
+                </a>
+
+                <a href="#network" class="btn btn-light">
+                    Explore our network
+                </a>
+            </div>
+
         </div>
+
 
         <div class="hero-visual reveal">
-          <img class="hero-image"
-            src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1200&q=85"
-            alt="Beautifully arranged skincare products in a soft editorial setting"
-            fetchpriority="high">
-          <div class="image-stamp" aria-label="Beauty, creativity, connection">
-            <span>B.</span>
-            <span>Beauty in bloom</span>
-          </div>
-          <div class="hero-caption">
-            <small>Our perspective</small>
-            <p>Good partnerships start with the right connection.</p>
-          </div>
-          <span class="hero-image-credit">Editorial imagery</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="intro-strip" aria-label="Our focus">
-      <div class="container intro-inner">
-        <span class="intro-label">The world we work in</span>
-        <div class="intro-words">
-          <span>Skincare</span>
-          <span>Beauty</span>
-          <span>Haircare</span>
-          <span>Creator culture</span>
-        </div>
-      </div>
-    </section>
+            <img
+                class="hero-image-main"
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1100&q=85"
+                alt="Luxury beauty products">
 
-    <section class="about" id="about">
-      <div class="container about-grid">
-        <div class="about-side reveal">
-          <div class="eyebrow">A different kind of connection</div>
-          <img
-            src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=900&q=85"
-            alt="Skincare products and beauty essentials arranged for an editorial shoot"
-            loading="lazy">
+            <img
+                class="hero-image-small"
+                src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=700&q=85"
+                alt="Beauty skincare">
+
+            <div class="hero-caption">
+                <small>Bloomlinx / 001</small>
+                <strong>
+                    Building meaningful beauty influence.
+                </strong>
+            </div>
+
         </div>
 
-        <div class="about-content reveal">
-          <div class="eyebrow">About Bloomlinx</div>
-          <h2 class="section-heading">
-            Not just another introduction. A <em>thoughtful connection.</em>
-          </h2>
-          <p>
-            The right creator partnership is about more than follower counts.
-            It starts with understanding a brand, its products, its audience
-            and the story it wants to tell.
-          </p>
-          <p>
-            Bloomlinx Agency is an early-stage beauty creator marketing agency
-            being built in Nigeria with an international outlook. We focus on
-            identifying relevant creators and developing partnership ideas
-            that bring brands and creative talent together.
-          </p>
-          <p>
-            Our goal is to make creator collaborations more organized,
-            considered and accessible, while helping creators discover
-            legitimate opportunities to work with beauty brands.
-          </p>
-          <a class="text-link" href="#process">Get to know our approach <span class="arrow">↗</span></a>
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-top reveal">
-          <div>
-            <div class="eyebrow">What we do</div>
-            <h2 class="section-heading">Good ideas deserve<br><em>the right people.</em></h2>
-          </div>
-          <p class="section-copy">
-            We approach creator marketing with research, relevance and a clear
-            understanding of what each partnership is meant to achieve.
-          </p>
+</section>
+
+
+<!-- =========================
+     MARQUEE
+========================= -->
+
+<div class="marquee">
+
+    <div class="marquee-track">
+
+        <span>Beauty creators</span>
+        <span class="dot">✦</span>
+
+        <span>Strategic campaigns</span>
+        <span class="dot">✦</span>
+
+        <span>Global beauty</span>
+        <span class="dot">✦</span>
+
+        <span>African creativity</span>
+        <span class="dot">✦</span>
+
+        <span>Creator partnerships</span>
+        <span class="dot">✦</span>
+
+        <span>Beauty creators</span>
+        <span class="dot">✦</span>
+
+        <span>Strategic campaigns</span>
+        <span class="dot">✦</span>
+
+        <span>Global beauty</span>
+        <span class="dot">✦</span>
+
+        <span>African creativity</span>
+        <span class="dot">✦</span>
+
+        <span>Creator partnerships</span>
+        <span class="dot">✦</span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section intro" id="about">
+
+    <div class="container intro-grid">
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                The agency
+            </div>
+
+            <h2 class="intro-title">
+                More than
+                <span class="serif"><em>influence.</em></span>
+            </h2>
+
         </div>
 
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <span class="service-number">01 / STRATEGY</span>
-            <span class="service-icon" aria-hidden="true">✳</span>
-            <h3>Campaign Thinking</h3>
+        <div class="intro-copy reveal">
+
             <p>
-              Explore campaign concepts, audience fit and creative directions
-              based on a brand's products, positioning and goals.
+                The beauty industry does not need more noise.
+                It needs better connections between brands, people
+                and culture.
             </p>
-          </article>
 
-          <article class="service-card reveal">
-            <span class="service-number">02 / DISCOVERY</span>
-            <span class="service-icon" aria-hidden="true">⌕</span>
-            <h3>Creator Matching</h3>
             <p>
-              Identify creators whose content, audience, style and niche may
-              align with a brand's campaign requirements.
+                Bloomlinx exists to make those connections more
+                intentional. We study the brand, understand the
+                opportunity, identify the right creator environment
+                and build the bridge between both sides.
             </p>
-          </article>
 
-          <article class="service-card reveal">
-            <span class="service-number">03 / CONNECTION</span>
-            <span class="service-icon" aria-hidden="true">↗</span>
-            <h3>Brand Partnerships</h3>
             <p>
-              Help initiate relevant conversations between brands and creators
-              around potential paid collaborations.
+                Our work sits where strategy meets creativity,
+                helping beauty brands discover voices that can
+                communicate their products with relevance and
+                authenticity.
             </p>
-          </article>
 
-          <article class="service-card reveal">
-            <span class="service-number">04 / COORDINATION</span>
-            <span class="service-icon" aria-hidden="true">◷</span>
-            <h3>Campaign Coordination</h3>
-            <p>
-              Work toward clear deliverables, timelines, communication and
-              expectations when a partnership moves forward.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <span class="service-number">05 / CREATIVE</span>
-            <span class="service-icon" aria-hidden="true">✧</span>
-            <h3>Beauty-Led Content</h3>
-            <p>
-              Explore creator-led storytelling for skincare, cosmetics,
-              haircare, fragrance and related lifestyle categories.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <span class="service-number">06 / NETWORK</span>
-            <span class="service-icon" aria-hidden="true">◎</span>
-            <h3>Creator Relationships</h3>
-            <p>
-              Develop a growing network of beauty creators and build
-              relationships around relevant future opportunities.
-            </p>
-          </article>
         </div>
-      </div>
-    </section>
 
-    <section class="audiences" id="creators">
-      <div class="container">
-        <div class="section-top reveal">
-          <div>
-            <div class="eyebrow">Two sides. One connection.</div>
-            <h2 class="section-heading">Built for both sides<br>of the <em>conversation.</em></h2>
-          </div>
-          <p class="section-copy">
-            Strong creator partnerships begin when brands and creators
-            understand the value they can bring to one another.
-          </p>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STRATEGY
+========================= -->
+
+<section class="section strategy" id="approach">
+
+    <div class="container">
+
+        <div class="strategy-header">
+
+            <div>
+                <div class="eyebrow">Our thinking</div>
+
+                <h2 class="strategy-title">
+                    We don't start
+                    with creators.
+                    <em>We start with the problem.</em>
+                </h2>
+            </div>
+
+            <p>
+                Every strong creator campaign begins with understanding
+                what the brand actually needs to achieve.
+            </p>
+
         </div>
+
+
+        <div class="strategy-flow">
+
+            <div class="flow-item reveal">
+                <div class="flow-number">01</div>
+                <h3>Research</h3>
+                <p>
+                    We understand the brand, audience, category,
+                    positioning and market context.
+                </p>
+            </div>
+
+            <div class="flow-item reveal">
+                <div class="flow-number">02</div>
+                <h3>Find</h3>
+                <p>
+                    We identify the opportunity, communication gap
+                    or growth problem worth solving.
+                </p>
+            </div>
+
+            <div class="flow-item reveal">
+                <div class="flow-number">03</div>
+                <h3>Design</h3>
+                <p>
+                    We develop a creator-led campaign direction
+                    built around the actual objective.
+                </p>
+            </div>
+
+            <div class="flow-item reveal">
+                <div class="flow-number">04</div>
+                <h3>Match</h3>
+                <p>
+                    We connect the opportunity with creators whose
+                    audience, content and identity make sense.
+                </p>
+            </div>
+
+            <div class="flow-item reveal">
+                <div class="flow-number">05</div>
+                <h3>Execute</h3>
+                <p>
+                    We help turn the strategy into professional
+                    creator-brand collaboration.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section" id="services">
+
+    <div class="container">
+
+        <div class="services-header">
+
+            <div>
+
+                <div class="eyebrow">
+                    What we do
+                </div>
+
+                <h2 class="services-title">
+                    Strategy with
+                    <em class="serif">creative gravity.</em>
+                </h2>
+
+            </div>
+
+            <p>
+                From creator discovery to campaign development,
+                Bloomlinx is designed to make beauty creator
+                marketing more thoughtful and commercially useful.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <article class="service-card reveal">
+                <span class="service-number">01</span>
+                <span class="service-arrow">↗</span>
+
+                <h3>Creator Discovery</h3>
+
+                <p>
+                    Identifying creators whose audience, content style,
+                    location and category make sense for a brand.
+                </p>
+            </article>
+
+
+            <article class="service-card reveal">
+                <span class="service-number">02</span>
+                <span class="service-arrow">↗</span>
+
+                <h3>Campaign Strategy</h3>
+
+                <p>
+                    Turning a brand objective into a creator campaign
+                    with a clear creative direction and purpose.
+                </p>
+            </article>
+
+
+            <article class="service-card reveal">
+                <span class="service-number">03</span>
+                <span class="service-arrow">↗</span>
+
+                <h3>Creator Partnerships</h3>
+
+                <p>
+                    Building professional relationships between brands
+                    and creators around specific campaigns.
+                </p>
+            </article>
+
+
+            <article class="service-card reveal">
+                <span class="service-number">04</span>
+                <span class="service-arrow">↗</span>
+
+                <h3>Beauty Market Insight</h3>
+
+                <p>
+                    Looking beyond follower counts to understand audience
+                    behaviour, category relevance and cultural context.
+                </p>
+            </article>
+
+
+            <article class="service-card reveal">
+                <span class="service-number">05</span>
+                <span class="service-arrow">↗</span>
+
+                <h3>Campaign Operations</h3>
+
+                <p>
+                    Helping structure communication, deliverables,
+                    timelines and collaboration expectations.
+                </p>
+            </article>
+
+
+            <article class="service-card reveal">
+                <span class="service-number">06</span>
+                <span class="service-arrow">↗</span>
+
+                <h3>Creator Network Development</h3>
+
+                <p>
+                    Developing a growing network of relevant beauty
+                    creators across markets and niches.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     IMAGE STORY
+========================= -->
+
+<section class="section image-story">
+
+    <div class="container story-grid">
+
+        <img
+            class="story-image-large reveal"
+            src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1000&q=85"
+            alt="Beauty editorial">
+
+        <div class="story-side">
+
+            <div class="story-card reveal">
+
+                <div>
+                    <div class="eyebrow" style="color:#c5d0c9;">
+                        The opportunity
+                    </div>
+
+                    <h2>
+                        Beauty is personal.
+                        Marketing should be too.
+                    </h2>
+                </div>
+
+                <p>
+                    The most valuable creator partnerships are not
+                    built by putting products in front of random
+                    audiences. They are built around relevance,
+                    trust and context.
+                </p>
+
+            </div>
+
+            <img
+                class="story-image-small reveal"
+                src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85"
+                alt="Skincare products">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BRANDS / CREATORS
+========================= -->
+
+<section class="section audience">
+
+    <div class="container">
+
+        <div class="audience-header reveal">
+
+            <div class="eyebrow">
+                Two sides. One ecosystem.
+            </div>
+
+            <h2 class="audience-title">
+                Built for the people
+                shaping beauty.
+            </h2>
+
+        </div>
+
 
         <div class="audience-grid">
-          <article class="audience-card reveal">
-            <img
-              src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=85"
-              alt="Beauty products arranged on a vanity"
-              loading="lazy">
-            <div class="eyebrow">For beauty brands</div>
-            <h3>Your next creator partnership starts here.</h3>
-            <p>
-              Explore creator discovery and campaign concepts shaped around
-              your products, audience and marketing objectives.
-            </p>
-            <a class="text-link" href="#contact">Discuss a brand partnership <span class="arrow">↗</span></a>
-          </article>
 
-          <article class="audience-card reveal">
-            <img
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=85"
-              alt="Portrait of a beauty and lifestyle creator"
-              loading="lazy">
-            <div class="eyebrow">For creators</div>
-            <h3>Your creativity deserves meaningful opportunities.</h3>
-            <p>
-              We welcome beauty creators interested in relevant brand
-              collaborations and growing professional relationships.
-            </p>
-            <a class="text-link"
-              href="mailto:contact@bloomlinxagency.site?subject=Creator%20Network%20Inquiry">
-              Introduce yourself <span class="arrow">↗</span>
-            </a>
-          </article>
+            <div class="audience-card brands reveal">
+
+                <div class="eyebrow" style="color:#bfcac3;">
+                    For brands
+                </div>
+
+                <h3>
+                    Your next
+                    audience is
+                    already listening.
+                </h3>
+
+                <p>
+                    We help beauty brands approach creator marketing
+                    with more intention, identifying relevant voices
+                    instead of simply chasing reach.
+                </p>
+
+                <div class="audience-list">
+
+                    <div>
+                        <span>Creator discovery</span>
+                        <span>01</span>
+                    </div>
+
+                    <div>
+                        <span>Campaign direction</span>
+                        <span>02</span>
+                    </div>
+
+                    <div>
+                        <span>Relevant audiences</span>
+                        <span>03</span>
+                    </div>
+
+                    <div>
+                        <span>Professional execution</span>
+                        <span>04</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="audience-card creators reveal">
+
+                <div class="eyebrow">
+                    For creators
+                </div>
+
+                <h3>
+                    Your influence
+                    deserves the
+                    right opportunity.
+                </h3>
+
+                <p>
+                    Bloomlinx works to connect beauty creators with
+                    legitimate brand opportunities that make sense
+                    for their audience and creative identity.
+                </p>
+
+                <div class="audience-list">
+
+                    <div>
+                        <span>Brand opportunities</span>
+                        <span>01</span>
+                    </div>
+
+                    <div>
+                        <span>Campaign partnerships</span>
+                        <span>02</span>
+                    </div>
+
+                    <div>
+                        <span>Professional representation</span>
+                        <span>03</span>
+                    </div>
+
+                    <div>
+                        <span>Long-term growth</span>
+                        <span>04</span>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-    </section>
 
-    <section class="process" id="process">
-      <div class="container">
-        <div class="eyebrow">Our approach</div>
-        <h2 class="section-heading">
-          Less guesswork.<br><em>More thoughtful matching.</em>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     NETWORK
+========================= -->
+
+<section class="section network" id="network">
+
+    <div class="container">
+
+        <div class="network-header">
+
+            <div>
+
+                <div class="eyebrow">
+                    Creator network
+                </div>
+
+                <h2 class="network-title">
+                    People are
+                    the <em>platform.</em>
+                </h2>
+
+            </div>
+
+            <p class="network-description">
+                Our network is being built around beauty creators
+                whose content, communities and creative identities
+                can create meaningful connections with brands.
+            </p>
+
+        </div>
+
+
+        <div class="creator-feature reveal">
+
+            <img
+                class="creator-photo"
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=85"
+                alt="Creator portrait">
+
+            <div class="creator-info">
+
+                <div>
+
+                    <div class="eyebrow">
+                        Featured network profile
+                    </div>
+
+                    <h3>
+                        A network built
+                        around relevance.
+                    </h3>
+
+                    <div class="handle">
+                        Beauty · Skincare · Lifestyle · Culture
+                    </div>
+
+                </div>
+
+
+                <div class="creator-meta">
+
+                    <div class="meta-box">
+                        <span class="meta-label">
+                            Markets
+                        </span>
+                        <span class="meta-value">
+                            Africa + Global
+                        </span>
+                    </div>
+
+                    <div class="meta-box">
+                        <span class="meta-label">
+                            Model
+                        </span>
+                        <span class="meta-value">
+                            Campaign-based
+                        </span>
+                    </div>
+
+                    <div class="meta-box">
+                        <span class="meta-label">
+                            Focus
+                        </span>
+                        <span class="meta-value">
+                            Beauty
+                        </span>
+                    </div>
+
+                    <div class="meta-box">
+                        <span class="meta-label">
+                            Approach
+                        </span>
+                        <span class="meta-value">
+                            Relevant first
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DIFFERENCE
+========================= -->
+
+<section class="section difference">
+
+    <div class="container difference-grid">
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                Why Bloomlinx
+            </div>
+
+            <h2 class="difference-title">
+                We are
+                building
+                differently.
+            </h2>
+
+        </div>
+
+
+        <div class="difference-copy reveal">
+
+            <p>
+                Follower count is only one piece of the puzzle.
+                We believe the future of beauty creator marketing
+                belongs to relevance, cultural understanding,
+                creative quality and genuine audience connection.
+            </p>
+
+
+            <div class="principles">
+
+                <div class="principle">
+
+                    <div class="principle-number">01</div>
+
+                    <div>
+                        <h4>Relevance over randomness.</h4>
+                        <p>
+                            The right creator is not always the biggest
+                            creator. Context matters.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="principle">
+
+                    <div class="principle-number">02</div>
+
+                    <div>
+                        <h4>Strategy before outreach.</h4>
+                        <p>
+                            We want to understand why a brand should
+                            work with a creator before asking for the deal.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="principle">
+
+                    <div class="principle-number">03</div>
+
+                    <div>
+                        <h4>People before platforms.</h4>
+                        <p>
+                            Social platforms change. Human trust and
+                            cultural connection remain.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="principle">
+
+                    <div class="principle-number">04</div>
+
+                    <div>
+                        <h4>Africa is not an afterthought.</h4>
+                        <p>
+                            We are building from Africa while thinking
+                            globally from day one.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section class="section process">
+
+    <div class="container">
+
+        <div class="process-header reveal">
+
+            <div class="eyebrow">
+                Collaboration
+            </div>
+
+            <h2 class="process-title">
+                From first conversation
+                to creator connection.
+            </h2>
+
+        </div>
+
+
+        <div class="process-row">
+
+            <div class="process-item reveal">
+
+                <div class="process-num">01</div>
+
+                <h3>
+                    Discover
+                </h3>
+
+                <p>
+                    We learn what you are building, who you want
+                    to reach and what success should look like.
+                </p>
+
+            </div>
+
+
+            <div class="process-item reveal">
+
+                <div class="process-num">02</div>
+
+                <h3>
+                    Strategise
+                </h3>
+
+                <p>
+                    We explore where creator marketing can add
+                    meaningful value to the opportunity.
+                </p>
+
+            </div>
+
+
+            <div class="process-item reveal">
+
+                <div class="process-num">03</div>
+
+                <h3>
+                    Match
+                </h3>
+
+                <p>
+                    We identify creators whose audience and content
+                    naturally align with the campaign.
+                </p>
+
+            </div>
+
+
+            <div class="process-item reveal">
+
+                <div class="process-num">04</div>
+
+                <h3>
+                    Activate
+                </h3>
+
+                <p>
+                    We move toward a professional collaboration
+                    with clear expectations and communication.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MANIFESTO
+========================= -->
+
+<section class="manifesto">
+
+    <div class="container reveal">
+
+        <div class="eyebrow">
+            The Bloomlinx point of view
+        </div>
+
+        <h2>
+            Don't just put a product
+            in front of people.
+            <em>Give it meaning.</em>
         </h2>
-        <p class="section-copy">
-          Every potential partnership starts with understanding the opportunity.
-          From there, we work toward finding a relevant creative fit.
+
+        <p>
+            Because the strongest beauty stories are not forced.
+            They happen when the right brand, the right creator
+            and the right audience meet at the right moment.
         </p>
 
-        <div class="process-grid">
-          <article class="process-step reveal">
-            <span class="number">STEP 01</span>
-            <h3>Research</h3>
-            <p>Understand the brand, products, audience and wider market.</p>
-          </article>
-          <article class="process-step reveal">
-            <span class="number">STEP 02</span>
-            <h3>Find the fit</h3>
-            <p>Identify the opportunity and the kind of creator who may suit it.</p>
-          </article>
-          <article class="process-step reveal">
-            <span class="number">STEP 03</span>
-            <h3>Build the idea</h3>
-            <p>Shape a relevant campaign concept and clear partnership proposal.</p>
-          </article>
-          <article class="process-step reveal">
-            <span class="number">STEP 04</span>
-            <h3>Connect</h3>
-            <p>Bring the proposal to the right people and explore next steps.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="network">
-      <div class="container network-grid">
-        <div class="network-visual reveal">
-          <img
-            src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1000&q=85"
-            alt="Skincare bottles and beauty products in a minimalist arrangement"
-            loading="lazy">
-        </div>
-
-        <div class="network-content reveal">
-          <div class="eyebrow">Our creator network</div>
-          <h2 class="section-heading">Relevance over <em>reach alone.</em></h2>
-          <p>
-            A creator's value is about more than a number on a profile.
-            Content quality, audience location, engagement, niche and
-            brand alignment all help shape a potential partnership.
-          </p>
-
-          <div class="network-points">
-            <div class="network-point">
-              <span class="check">✓</span>
-              <div>
-                <strong>Beauty-focused discovery</strong>
-                <span>Skincare, cosmetics, haircare, fragrance and related niches.</span>
-              </div>
-            </div>
-            <div class="network-point">
-              <span class="check">✓</span>
-              <div>
-                <strong>Audience-aware matching</strong>
-                <span>Consider audience demographics and geography when available.</span>
-              </div>
-            </div>
-            <div class="network-point">
-              <span class="check">✓</span>
-              <div>
-                <strong>International outlook</strong>
-                <span>Building connections across African and international markets.</span>
-              </div>
-            </div>
-          </div>
-
-          <a class="button" href="mailto:contact@bloomlinxagency.site?subject=Creator%20Network%20Inquiry">
-            Connect With Bloomlinx <span class="arrow">↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta" id="contact">
-      <div class="container cta-inner">
-        <div class="reveal">
-          <div class="eyebrow">Start a conversation</div>
-          <h2 class="section-heading">Let's create something <em>worth connecting over.</em></h2>
-          <p class="section-copy">
-            Are you a beauty brand exploring creator marketing, or a creator
-            interested in future collaboration opportunities? We'd love to hear
-            what you're working on.
-          </p>
-        </div>
-
-        <div class="cta-action reveal">
-          <a class="button" href="mailto:partnership@bloomlinxagency.site?subject=Brand%20Partnership%20Inquiry">
-            Discuss a Partnership <span class="arrow">↗</span>
-          </a>
-          <small>Tell us about your brand, campaign idea or creator interests.</small>
-          <a class="text-link" href="mailto:contact@bloomlinxagency.site">
-            Email Bloomlinx directly <span class="arrow">↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="#home" aria-label="Bloomlinx Agency home">
-            <span class="brand-symbol">B</span>
-            <span>
-              <span class="brand-name">BLOOMLINX</span>
-              <span class="brand-subtitle">Beauty Creator Marketing</span>
-            </span>
-          </a>
-          <p>
-            Connecting beauty brands with relevant creators and exploring
-            thoughtful partnerships across Africa and international markets.
-          </p>
-        </div>
-
-        <div class="footer-column">
-          <h4>Explore</h4>
-          <a href="#about">About Bloomlinx</a>
-          <a href="#services">Our Services</a>
-          <a href="#creators">For Creators</a>
-          <a href="#process">Our Approach</a>
-        </div>
-
-        <div class="footer-column">
-          <h4>Get in touch</h4>
-          <a href="mailto:partnership@bloomlinxagency.site">Brand Partnerships</a>
-          <a href="mailto:contact@bloomlinxagency.site">General Inquiries</a>
-          <a href="https://www.instagram.com/bloomlinx.agency/"
-            target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-          <a href="https://www.bloomlinxagency.site/"
-            target="_blank" rel="noopener noreferrer">Current Website ↗</a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Bloomlinx Agency. All rights reserved.</span>
-        <div class="footer-social">
-          <a href="#home">Back to top ↑</a>
-          <span>Built in Africa. Open to the world.</span>
-        </div>
-      </div>
     </div>
-  </footer>
 
-  <script>
-    (() => {
-      const toggle = document.getElementById("menuToggle");
-      const links = document.getElementById("navLinks");
+</section>
 
-      function closeMenu() {
-        links.classList.remove("open");
-        document.body.classList.remove("menu-open");
-        toggle.setAttribute("aria-expanded", "false");
-        toggle.setAttribute("aria-label", "Open navigation menu");
-        toggle.textContent = "☰";
-      }
 
-      toggle.addEventListener("click", () => {
-        const isOpen = links.classList.toggle("open");
-        document.body.classList.toggle("menu-open", isOpen);
-        toggle.setAttribute("aria-expanded", String(isOpen));
-        toggle.setAttribute(
-          "aria-label",
-          isOpen ? "Close navigation menu" : "Open navigation menu"
-        );
-        toggle.textContent = isOpen ? "×" : "☰";
-      });
+<!-- =========================
+     CONTACT
+========================= -->
 
-      links.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", closeMenu);
-      });
+<section class="contact" id="contact">
 
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 680) closeMenu();
-      });
+    <div class="container contact-grid">
 
-      document.getElementById("year").textContent =
-        new Date().getFullYear();
+        <div class="reveal">
 
-      const revealElements = document.querySelectorAll(".reveal");
-      const reduceMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)"
-      ).matches;
+            <div class="eyebrow">
+                Let's build something
+            </div>
 
-      if ("IntersectionObserver" in window && !reduceMotion) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
+            <h2 class="contact-title">
+                Ready to make
+                <em>the connection?</em>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-right reveal">
+
+            <p>
+                Whether you are a beauty brand looking for the
+                right creator partnership or a creator looking for
+                meaningful opportunities, we'd love to hear from you.
+            </p>
+
+
+            <div class="contact-links">
+
+                <a
+                    href="mailto:partnership@bloomlinxagency.site"
+                    class="contact-link"
+                >
+                    <span>Brand partnerships</span>
+                    <span>↗</span>
+                </a>
+
+
+                <a
+                    href="mailto:contact@bloomlinxagency.site"
+                    class="contact-link"
+                >
+                    <span>General enquiries</span>
+                    <span>↗</span>
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/bloomlinx.agency/"
+                    target="_blank"
+                    rel="noopener"
+                    class="contact-link"
+                >
+                    <span>Instagram</span>
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <img
+                    src="images/bloomlinx-logo.png"
+                    alt="Bloomlinx Agency"
+                >
+
+                <p>
+                    Beauty creator marketing built from Africa
+                    for brands and creators shaping what comes next.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#network">Creator Network</a>
+                <a href="#approach">Our Approach</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Connect</h4>
+
+                <a href="mailto:partnership@bloomlinxagency.site">
+                    Partnerships
+                </a>
+
+                <a href="mailto:contact@bloomlinxagency.site">
+                    Contact
+                </a>
+
+                <a
+                    href="https://www.instagram.com/bloomlinx.agency/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Bloomlinx Agency. All rights reserved.
+            </span>
+
+            <span>
+                Beauty × Creators × Culture
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+/* =========================
+   HEADER SCROLL
+========================= */
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 30) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+
+});
+
+
+/* =========================
+   REVEAL ANIMATIONS
+========================= */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
             if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.12 });
 
-        revealElements.forEach((element) => observer.observe(element));
-      } else {
-        revealElements.forEach((element) => element.classList.add("visible"));
-      }
-    })();
-  </script>
+                entry.target.classList.add("visible");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.12
+    }
+
+);
+
+revealElements.forEach(element => {
+
+    observer.observe(element);
+
+});
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuBtn = document.getElementById("menuBtn");
+
+let mobileMenuOpen = false;
+
+menuBtn.addEventListener("click", () => {
+
+    mobileMenuOpen = !mobileMenuOpen;
+
+    if (mobileMenuOpen) {
+
+        const menu = document.createElement("div");
+
+        menu.id = "mobileMenu";
+
+        menu.innerHTML = `
+            <div style="
+                position:fixed;
+                inset:0;
+                z-index:999;
+                background:#f7f4ee;
+                padding:120px 30px 40px;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                gap:25px;
+            ">
+
+                <a href="#about" style="
+                    font-family:Playfair Display,serif;
+                    font-size:42px;
+                ">About</a>
+
+                <a href="#services" style="
+                    font-family:Playfair Display,serif;
+                    font-size:42px;
+                ">Services</a>
+
+                <a href="#network" style="
+                    font-family:Playfair Display,serif;
+                    font-size:42px;
+                ">Creators</a>
+
+                <a href="#approach" style="
+                    font-family:Playfair Display,serif;
+                    font-size:42px;
+                ">Approach</a>
+
+                <a href="#contact" style="
+                    font-family:Playfair Display,serif;
+                    font-size:42px;
+                ">Contact</a>
+
+            </div>
+        `;
+
+        document.body.appendChild(menu);
+
+        menu.querySelectorAll("a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                menu.remove();
+
+                mobileMenuOpen = false;
+
+            });
+
+        });
+
+    } else {
+
+        const menu = document.getElementById("mobileMenu");
+
+        if (menu) {
+            menu.remove();
+        }
+
+    }
+
+});
+
+</script>
+
 </body>
 </html>
