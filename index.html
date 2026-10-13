@@ -1,0 +1,1502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="description" content="Bloomlinx Agency connects beauty brands with relevant creators to develop thoughtful creator marketing partnerships across Africa and international markets.">
+  <meta property="og:title" content="Bloomlinx Agency | Beauty, Meet Influence">
+  <meta property="og:description" content="Connecting beauty brands with the creators shaping what comes next.">
+  <meta property="og:type" content="website">
+  <title>Bloomlinx Agency | Beauty, Meet Influence</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --paper: #f8f7f2;
+      --white: #fffefa;
+      --ink: #20251f;
+      --muted: #73786e;
+      --green: #244d38;
+      --green-dark: #193828;
+      --sage: #dce4d7;
+      --line: #e4e3da;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+      --max: 1220px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 95px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+
+    body.menu-open { overflow: hidden; }
+
+    a { color: inherit; text-decoration: none; }
+
+    button, input, textarea, select { font: inherit; }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    img { display: block; max-width: 100%; }
+
+    ::selection {
+      background: var(--green);
+      color: white;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 64px));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .19em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 22px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .serif { font-family: var(--serif); }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 20px 0;
+      font-family: var(--serif);
+      font-size: clamp(38px, 5vw, 65px);
+      font-weight: 400;
+      letter-spacing: -.045em;
+      line-height: 1.12;
+    }
+
+    .section-heading em {
+      color: var(--green);
+      font-weight: 400;
+    }
+
+    .section-copy {
+      max-width: 520px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 50px;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 0 23px;
+      border: 1px solid var(--green);
+      background: var(--green);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .045em;
+      transition: background .25s, color .25s, transform .25s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: var(--green-dark);
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--green);
+    }
+
+    .button-outline:hover {
+      background: var(--green);
+      color: white;
+    }
+
+    .arrow { font-size: 17px; line-height: 1; }
+
+    /* Navigation */
+
+    .site-header {
+      position: sticky;
+      z-index: 100;
+      top: 0;
+      border-bottom: 1px solid rgba(32,37,31,.09);
+      background: rgba(248,247,242,.94);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      display: flex;
+      min-height: 82px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-shrink: 0;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .brand-symbol {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border: 1px solid var(--green);
+      border-radius: 50%;
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 22px;
+    }
+
+    .brand-name {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      line-height: 1.15;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(17px, 2.5vw, 35px);
+    }
+
+    .nav-links > a:not(.button) {
+      color: #4e534b;
+      font-size: 11px;
+      transition: color .2s;
+    }
+
+    .nav-links > a:not(.button):hover { color: var(--green); }
+
+    .nav-links .button {
+      min-height: 42px;
+      padding-inline: 17px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 23px;
+    }
+
+    /* Hero */
+
+    .hero { padding: 55px 0 77px; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      align-items: center;
+      gap: clamp(32px, 6vw, 82px);
+    }
+
+    .hero-content { padding: 30px 0 36px; }
+
+    .hero h1 {
+      max-width: 680px;
+      margin: 24px 0;
+      font-family: var(--serif);
+      font-size: clamp(52px, 7.1vw, 91px);
+      font-weight: 400;
+      letter-spacing: -.065em;
+      line-height: .99;
+    }
+
+    .hero h1 em {
+      color: var(--green);
+      font-weight: 400;
+    }
+
+    .hero-copy {
+      max-width: 445px;
+      margin: 25px 0 30px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.95;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .04em;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #668667;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 530px;
+      background: #e8e3d7;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-image-credit {
+      position: absolute;
+      right: 14px;
+      bottom: 13px;
+      padding: 5px 9px;
+      background: rgba(255,254,250,.88);
+      color: #56584f;
+      font-size: 8px;
+      letter-spacing: .04em;
+    }
+
+    .image-stamp {
+      position: absolute;
+      top: 28px;
+      left: -27px;
+      display: grid;
+      width: 104px;
+      height: 104px;
+      align-content: center;
+      justify-items: center;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      text-align: center;
+      transform: rotate(-9deg);
+    }
+
+    .image-stamp span:first-child {
+      font-family: var(--serif);
+      font-size: 27px;
+      line-height: 1.1;
+    }
+
+    .image-stamp span:last-child {
+      margin-top: 5px;
+      font-size: 7px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .hero-caption {
+      position: absolute;
+      right: -18px;
+      bottom: 32px;
+      max-width: 205px;
+      padding: 20px 23px;
+      background: var(--white);
+      box-shadow: 0 12px 35px rgba(32,37,31,.07);
+    }
+
+    .hero-caption small {
+      color: var(--green);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .hero-caption p {
+      margin: 8px 0 0;
+      font-family: var(--serif);
+      font-size: 20px;
+      line-height: 1.3;
+    }
+
+    /* Intro strip */
+
+    .intro-strip {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .intro-inner {
+      display: flex;
+      min-height: 105px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .intro-label {
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .intro-words {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px 29px;
+      font-family: var(--serif);
+      font-size: clamp(17px, 2.2vw, 25px);
+    }
+
+    .intro-words span { white-space: nowrap; }
+
+    .intro-words span::after {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-left: 29px;
+      border-radius: 50%;
+      background: #a7b29d;
+      content: "";
+      vertical-align: middle;
+    }
+
+    .intro-words span:last-child::after { display: none; }
+
+    /* About */
+
+    .about { padding: 120px 0; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .82fr 1.18fr;
+      gap: clamp(40px, 9vw, 130px);
+    }
+
+    .about-side {
+      padding-top: 10px;
+    }
+
+    .about-side img {
+      width: 100%;
+      height: 390px;
+      margin-top: 35px;
+      object-fit: cover;
+      object-position: center;
+      background: #e7e3d8;
+    }
+
+    .about-content .section-heading { margin-top: 18px; }
+
+    .about-content > p {
+      max-width: 570px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--green);
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* Services */
+
+    .services {
+      padding: 110px 0;
+      background: #efefe7;
+    }
+
+    .section-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .section-top .section-heading { margin-bottom: 0; }
+
+    .section-top .section-copy { max-width: 345px; }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid #d8d9cf;
+      border-left: 1px solid #d8d9cf;
+    }
+
+    .service-card {
+      min-height: 280px;
+      padding: 30px 27px;
+      border-right: 1px solid #d8d9cf;
+      border-bottom: 1px solid #d8d9cf;
+      transition: background .25s;
+    }
+
+    .service-card:hover { background: #f8f7f2; }
+
+    .service-number {
+      color: #7c8a78;
+      font-size: 10px;
+      letter-spacing: .1em;
+    }
+
+    .service-icon {
+      display: grid;
+      width: 43px;
+      height: 43px;
+      margin: 26px 0 22px;
+      place-items: center;
+      border: 1px solid #c7cec0;
+      border-radius: 50%;
+      color: var(--green);
+      font-size: 19px;
+    }
+
+    .service-card h3 {
+      margin: 0 0 11px;
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: -.025em;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    /* Audience panels */
+
+    .audiences { padding: 120px 0; }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .audience-card {
+      position: relative;
+      display: flex;
+      min-height: 440px;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      padding: 38px;
+      background: #ddd9ce;
+      color: white;
+      isolation: isolate;
+    }
+
+    .audience-card::before {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13,29,19,.04) 0%, rgba(13,29,19,.83) 100%);
+      content: "";
+      transition: opacity .3s;
+    }
+
+    .audience-card img {
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .7s;
+    }
+
+    .audience-card:hover img { transform: scale(1.04); }
+
+    .audience-card .eyebrow { color: #e0e8d8; }
+
+    .audience-card h3 {
+      max-width: 440px;
+      margin: 17px 0 12px;
+      font-family: var(--serif);
+      font-size: clamp(35px, 4vw, 49px);
+      font-weight: 400;
+      letter-spacing: -.035em;
+      line-height: 1.1;
+    }
+
+    .audience-card p {
+      max-width: 390px;
+      margin: 0 0 24px;
+      color: rgba(255,255,255,.83);
+      font-size: 13px;
+      line-height: 1.85;
+    }
+
+    .audience-card .text-link {
+      align-self: flex-start;
+      border-color: rgba(255,255,255,.75);
+      color: white;
+    }
+
+    /* Process */
+
+    .process {
+      padding: 115px 0;
+      background: var(--green-dark);
+      color: white;
+    }
+
+    .process .eyebrow { color: #c9d9c6; }
+
+    .process .section-heading { max-width: 690px; }
+
+    .process .section-heading em { color: #c9d9c6; }
+
+    .process .section-copy { color: rgba(255,255,255,.67); }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 65px;
+      border-top: 1px solid rgba(255,255,255,.22);
+    }
+
+    .process-step {
+      position: relative;
+      min-height: 220px;
+      padding: 28px 22px 20px 0;
+    }
+
+    .process-step:not(:first-child) { padding-left: 22px; }
+
+    .process-step:not(:last-child) {
+      border-right: 1px solid rgba(255,255,255,.18);
+    }
+
+    .process-step:not(:first-child) { border-left: 0; }
+
+    .process-step .number {
+      color: #b8cbb3;
+      font-size: 10px;
+      letter-spacing: .14em;
+    }
+
+    .process-step h3 {
+      margin: 36px 0 12px;
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .process-step p {
+      margin: 0;
+      color: rgba(255,255,255,.66);
+      font-size: 12px;
+      line-height: 1.85;
+    }
+
+    /* Network */
+
+    .network { padding: 120px 0; }
+
+    .network-grid {
+      display: grid;
+      grid-template-columns: 1fr .85fr;
+      align-items: center;
+      gap: 75px;
+    }
+
+    .network-visual {
+      display: grid;
+      min-height: 410px;
+      place-items: center;
+      padding: 30px;
+      background: #e6e8dc;
+    }
+
+    .network-visual img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      background: #d7d9cc;
+    }
+
+    .network-content .section-heading { font-size: clamp(39px, 4.7vw, 59px); }
+
+    .network-content p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.95;
+    }
+
+    .network-points {
+      display: grid;
+      gap: 0;
+      margin: 26px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .network-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .network-point .check {
+      color: var(--green);
+      font-size: 16px;
+    }
+
+    .network-point strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 12px;
+    }
+
+    .network-point span:last-child {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
+    /* CTA */
+
+    .final-cta {
+      padding: 90px 0;
+      background: #e9e9df;
+    }
+
+    .cta-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 35px;
+    }
+
+    .cta-inner .section-heading {
+      max-width: 720px;
+      margin: 17px 0;
+      font-size: clamp(42px, 5.7vw, 71px);
+    }
+
+    .cta-inner .section-copy { max-width: 520px; }
+
+    .cta-action {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .cta-action small {
+      max-width: 210px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+
+    .site-footer {
+      padding: 65px 0 25px;
+      background: #1d2821;
+      color: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .8fr;
+      gap: 50px;
+      padding-bottom: 55px;
+    }
+
+    .footer-brand .brand-symbol { border-color: #c9d9c6; color: #c9d9c6; }
+
+    .footer-brand .brand-subtitle { color: #a8b3a6; }
+
+    .footer-brand p {
+      max-width: 320px;
+      margin-top: 23px;
+      color: rgba(255,255,255,.63);
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    .footer-column h4 {
+      margin: 7px 0 20px;
+      color: #c9d9c6;
+      font-size: 10px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .footer-column a {
+      display: block;
+      width: fit-content;
+      margin: 12px 0;
+      color: rgba(255,255,255,.76);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+      transition: color .2s;
+    }
+
+    .footer-column a:hover { color: white; }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.54);
+      font-size: 10px;
+    }
+
+    .footer-social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    .footer-social a:hover { color: white; }
+
+    /* Animation */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* Tablet */
+
+    @media (max-width: 900px) {
+      .container { width: min(100% - 42px, var(--max)); }
+
+      .nav { min-height: 74px; }
+
+      .nav-links { gap: 16px; }
+
+      .nav-links > a:not(.button) { font-size: 10px; }
+
+      .hero-grid { gap: 30px; }
+
+      .hero h1 { font-size: clamp(51px, 7vw, 72px); }
+
+      .hero-visual { min-height: 450px; }
+
+      .image-stamp { left: -18px; width: 85px; height: 85px; }
+
+      .hero-caption { right: -10px; }
+
+      .about-grid { gap: 48px; }
+
+      .service-card { padding: 24px 20px; }
+
+      .network-grid { gap: 42px; }
+
+      .process-step:not(:first-child) { padding-left: 16px; }
+
+      .process-step { padding-right: 15px; }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 680px) {
+      html { scroll-padding-top: 76px; }
+
+      .container { width: calc(100% - 36px); }
+
+      .nav { min-height: 70px; }
+
+      .brand-symbol { width: 34px; height: 34px; font-size: 20px; }
+
+      .brand-name { font-size: 15px; }
+
+      .brand-subtitle { font-size: 7px; }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 18px 22px;
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+      }
+
+      .nav-links.open { display: flex; flex-direction: column; }
+
+      .nav-links > a:not(.button) {
+        padding: 15px 4px;
+        border-bottom: 1px solid var(--line);
+        font-size: 13px;
+      }
+
+      .nav-links .button { margin-top: 15px; }
+
+      .hero { padding: 35px 0 50px; }
+
+      .hero-grid { grid-template-columns: 1fr; gap: 38px; }
+
+      .hero-content { padding: 12px 0 0; }
+
+      .hero h1 {
+        max-width: 520px;
+        margin: 22px 0;
+        font-size: clamp(54px, 14vw, 76px);
+      }
+
+      .hero-copy { font-size: 13px; }
+
+      .hero-actions { align-items: stretch; }
+
+      .hero-actions .button { flex: 1; padding-inline: 12px; }
+
+      .hero-note { margin-top: 25px; }
+
+      .hero-visual { min-height: 440px; margin: 0 8px 0 10px; }
+
+      .image-stamp { top: 20px; left: -10px; }
+
+      .hero-caption { right: -7px; bottom: 18px; max-width: 180px; padding: 16px; }
+
+      .hero-caption p { font-size: 18px; }
+
+      .intro-inner {
+        min-height: 120px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 14px;
+        padding-block: 22px;
+      }
+
+      .intro-words {
+        justify-content: flex-start;
+        gap: 10px 15px;
+        font-size: 19px;
+      }
+
+      .intro-words span::after { margin-left: 15px; }
+
+      .about, .audiences, .network { padding: 78px 0; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 35px; }
+
+      .about-side img { height: 310px; margin-top: 24px; }
+
+      .section-heading { font-size: clamp(39px, 10vw, 53px); }
+
+      .about-content > p { font-size: 13px; }
+
+      .services { padding: 78px 0; }
+
+      .section-top { align-items: flex-start; flex-direction: column; gap: 15px; margin-bottom: 30px; }
+
+      .section-top .section-copy { margin-top: 0; }
+
+      .service-grid { grid-template-columns: 1fr; }
+
+      .service-card { min-height: 0; padding: 25px; }
+
+      .service-icon { margin: 19px 0 16px; }
+
+      .audience-grid { grid-template-columns: 1fr; gap: 15px; }
+
+      .audience-card { min-height: 420px; padding: 26px; }
+
+      .process { padding: 78px 0; }
+
+      .process-grid { grid-template-columns: 1fr 1fr; margin-top: 40px; }
+
+      .process-step { min-height: 205px; padding: 22px 16px 24px 0; }
+
+      .process-step:not(:first-child) { padding-left: 16px; }
+
+      .process-step:nth-child(2) { border-right: 0; }
+
+      .process-step:nth-child(3) { border-top: 1px solid rgba(255,255,255,.18); }
+
+      .process-step:nth-child(4) { border-top: 1px solid rgba(255,255,255,.18); }
+
+      .process-step h3 { margin-top: 27px; font-size: 23px; }
+
+      .network-grid { grid-template-columns: 1fr; gap: 32px; }
+
+      .network-visual { min-height: 300px; padding: 17px; }
+
+      .network-visual img { height: 275px; }
+
+      .network-content .section-heading { font-size: 44px; }
+
+      .final-cta { padding: 70px 0; }
+
+      .cta-inner { grid-template-columns: 1fr; gap: 22px; }
+
+      .cta-inner .section-heading { font-size: clamp(44px, 11vw, 59px); }
+
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px 20px; padding-bottom: 35px; }
+
+      .footer-brand { grid-column: 1 / -1; }
+
+      .site-footer { padding-top: 45px; }
+
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (max-width: 360px) {
+      .container { width: calc(100% - 28px); }
+
+      .hero h1 { font-size: 51px; }
+
+      .hero-actions { flex-direction: column; }
+
+      .hero-visual { min-height: 365px; }
+
+      .footer-grid { grid-template-columns: 1fr; }
+
+      .footer-brand { grid-column: auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Bloomlinx Agency home">
+        <span class="brand-symbol">B</span>
+        <span>
+          <span class="brand-name">BLOOMLINX</span>
+          <span class="brand-subtitle">Beauty Creator Marketing</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="navLinks">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">What We Do</a>
+        <a href="#creators">For Creators</a>
+        <a href="#process">Our Approach</a>
+        <a class="button" href="#contact">Partner With Us <span class="arrow">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow">Beauty meets influence</div>
+          <h1>Where beauty finds its <em>people.</em></h1>
+          <p class="hero-copy">
+            We connect beauty brands with relevant creators to explore meaningful
+            partnerships, develop thoughtful campaign ideas and bring products
+            closer to the audiences they are made for.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Let's Work Together <span class="arrow">↗</span></a>
+            <a class="button button-outline" href="#services">Discover Bloomlinx <span class="arrow">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="status-dot"></span>
+            <span>Built in Africa. Open to the world.</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <img class="hero-image"
+            src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1200&q=85"
+            alt="Beautifully arranged skincare products in a soft editorial setting"
+            fetchpriority="high">
+          <div class="image-stamp" aria-label="Beauty, creativity, connection">
+            <span>B.</span>
+            <span>Beauty in bloom</span>
+          </div>
+          <div class="hero-caption">
+            <small>Our perspective</small>
+            <p>Good partnerships start with the right connection.</p>
+          </div>
+          <span class="hero-image-credit">Editorial imagery</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-label="Our focus">
+      <div class="container intro-inner">
+        <span class="intro-label">The world we work in</span>
+        <div class="intro-words">
+          <span>Skincare</span>
+          <span>Beauty</span>
+          <span>Haircare</span>
+          <span>Creator culture</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-side reveal">
+          <div class="eyebrow">A different kind of connection</div>
+          <img
+            src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=900&q=85"
+            alt="Skincare products and beauty essentials arranged for an editorial shoot"
+            loading="lazy">
+        </div>
+
+        <div class="about-content reveal">
+          <div class="eyebrow">About Bloomlinx</div>
+          <h2 class="section-heading">
+            Not just another introduction. A <em>thoughtful connection.</em>
+          </h2>
+          <p>
+            The right creator partnership is about more than follower counts.
+            It starts with understanding a brand, its products, its audience
+            and the story it wants to tell.
+          </p>
+          <p>
+            Bloomlinx Agency is an early-stage beauty creator marketing agency
+            being built in Nigeria with an international outlook. We focus on
+            identifying relevant creators and developing partnership ideas
+            that bring brands and creative talent together.
+          </p>
+          <p>
+            Our goal is to make creator collaborations more organized,
+            considered and accessible, while helping creators discover
+            legitimate opportunities to work with beauty brands.
+          </p>
+          <a class="text-link" href="#process">Get to know our approach <span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <div class="eyebrow">What we do</div>
+            <h2 class="section-heading">Good ideas deserve<br><em>the right people.</em></h2>
+          </div>
+          <p class="section-copy">
+            We approach creator marketing with research, relevance and a clear
+            understanding of what each partnership is meant to achieve.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-number">01 / STRATEGY</span>
+            <span class="service-icon" aria-hidden="true">✳</span>
+            <h3>Campaign Thinking</h3>
+            <p>
+              Explore campaign concepts, audience fit and creative directions
+              based on a brand's products, positioning and goals.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">02 / DISCOVERY</span>
+            <span class="service-icon" aria-hidden="true">⌕</span>
+            <h3>Creator Matching</h3>
+            <p>
+              Identify creators whose content, audience, style and niche may
+              align with a brand's campaign requirements.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">03 / CONNECTION</span>
+            <span class="service-icon" aria-hidden="true">↗</span>
+            <h3>Brand Partnerships</h3>
+            <p>
+              Help initiate relevant conversations between brands and creators
+              around potential paid collaborations.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">04 / COORDINATION</span>
+            <span class="service-icon" aria-hidden="true">◷</span>
+            <h3>Campaign Coordination</h3>
+            <p>
+              Work toward clear deliverables, timelines, communication and
+              expectations when a partnership moves forward.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">05 / CREATIVE</span>
+            <span class="service-icon" aria-hidden="true">✧</span>
+            <h3>Beauty-Led Content</h3>
+            <p>
+              Explore creator-led storytelling for skincare, cosmetics,
+              haircare, fragrance and related lifestyle categories.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">06 / NETWORK</span>
+            <span class="service-icon" aria-hidden="true">◎</span>
+            <h3>Creator Relationships</h3>
+            <p>
+              Develop a growing network of beauty creators and build
+              relationships around relevant future opportunities.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="audiences" id="creators">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <div class="eyebrow">Two sides. One connection.</div>
+            <h2 class="section-heading">Built for both sides<br>of the <em>conversation.</em></h2>
+          </div>
+          <p class="section-copy">
+            Strong creator partnerships begin when brands and creators
+            understand the value they can bring to one another.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=85"
+              alt="Beauty products arranged on a vanity"
+              loading="lazy">
+            <div class="eyebrow">For beauty brands</div>
+            <h3>Your next creator partnership starts here.</h3>
+            <p>
+              Explore creator discovery and campaign concepts shaped around
+              your products, audience and marketing objectives.
+            </p>
+            <a class="text-link" href="#contact">Discuss a brand partnership <span class="arrow">↗</span></a>
+          </article>
+
+          <article class="audience-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=85"
+              alt="Portrait of a beauty and lifestyle creator"
+              loading="lazy">
+            <div class="eyebrow">For creators</div>
+            <h3>Your creativity deserves meaningful opportunities.</h3>
+            <p>
+              We welcome beauty creators interested in relevant brand
+              collaborations and growing professional relationships.
+            </p>
+            <a class="text-link"
+              href="mailto:contact@bloomlinxagency.site?subject=Creator%20Network%20Inquiry">
+              Introduce yourself <span class="arrow">↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <div class="eyebrow">Our approach</div>
+        <h2 class="section-heading">
+          Less guesswork.<br><em>More thoughtful matching.</em>
+        </h2>
+        <p class="section-copy">
+          Every potential partnership starts with understanding the opportunity.
+          From there, we work toward finding a relevant creative fit.
+        </p>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span class="number">STEP 01</span>
+            <h3>Research</h3>
+            <p>Understand the brand, products, audience and wider market.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="number">STEP 02</span>
+            <h3>Find the fit</h3>
+            <p>Identify the opportunity and the kind of creator who may suit it.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="number">STEP 03</span>
+            <h3>Build the idea</h3>
+            <p>Shape a relevant campaign concept and clear partnership proposal.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="number">STEP 04</span>
+            <h3>Connect</h3>
+            <p>Bring the proposal to the right people and explore next steps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="network">
+      <div class="container network-grid">
+        <div class="network-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1000&q=85"
+            alt="Skincare bottles and beauty products in a minimalist arrangement"
+            loading="lazy">
+        </div>
+
+        <div class="network-content reveal">
+          <div class="eyebrow">Our creator network</div>
+          <h2 class="section-heading">Relevance over <em>reach alone.</em></h2>
+          <p>
+            A creator's value is about more than a number on a profile.
+            Content quality, audience location, engagement, niche and
+            brand alignment all help shape a potential partnership.
+          </p>
+
+          <div class="network-points">
+            <div class="network-point">
+              <span class="check">✓</span>
+              <div>
+                <strong>Beauty-focused discovery</strong>
+                <span>Skincare, cosmetics, haircare, fragrance and related niches.</span>
+              </div>
+            </div>
+            <div class="network-point">
+              <span class="check">✓</span>
+              <div>
+                <strong>Audience-aware matching</strong>
+                <span>Consider audience demographics and geography when available.</span>
+              </div>
+            </div>
+            <div class="network-point">
+              <span class="check">✓</span>
+              <div>
+                <strong>International outlook</strong>
+                <span>Building connections across African and international markets.</span>
+              </div>
+            </div>
+          </div>
+
+          <a class="button" href="mailto:contact@bloomlinxagency.site?subject=Creator%20Network%20Inquiry">
+            Connect With Bloomlinx <span class="arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contact">
+      <div class="container cta-inner">
+        <div class="reveal">
+          <div class="eyebrow">Start a conversation</div>
+          <h2 class="section-heading">Let's create something <em>worth connecting over.</em></h2>
+          <p class="section-copy">
+            Are you a beauty brand exploring creator marketing, or a creator
+            interested in future collaboration opportunities? We'd love to hear
+            what you're working on.
+          </p>
+        </div>
+
+        <div class="cta-action reveal">
+          <a class="button" href="mailto:partnership@bloomlinxagency.site?subject=Brand%20Partnership%20Inquiry">
+            Discuss a Partnership <span class="arrow">↗</span>
+          </a>
+          <small>Tell us about your brand, campaign idea or creator interests.</small>
+          <a class="text-link" href="mailto:contact@bloomlinxagency.site">
+            Email Bloomlinx directly <span class="arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="Bloomlinx Agency home">
+            <span class="brand-symbol">B</span>
+            <span>
+              <span class="brand-name">BLOOMLINX</span>
+              <span class="brand-subtitle">Beauty Creator Marketing</span>
+            </span>
+          </a>
+          <p>
+            Connecting beauty brands with relevant creators and exploring
+            thoughtful partnerships across Africa and international markets.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <a href="#about">About Bloomlinx</a>
+          <a href="#services">Our Services</a>
+          <a href="#creators">For Creators</a>
+          <a href="#process">Our Approach</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Get in touch</h4>
+          <a href="mailto:partnership@bloomlinxagency.site">Brand Partnerships</a>
+          <a href="mailto:contact@bloomlinxagency.site">General Inquiries</a>
+          <a href="https://www.instagram.com/bloomlinx.agency/"
+            target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://www.bloomlinxagency.site/"
+            target="_blank" rel="noopener noreferrer">Current Website ↗</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Bloomlinx Agency. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#home">Back to top ↑</a>
+          <span>Built in Africa. Open to the world.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const toggle = document.getElementById("menuToggle");
+      const links = document.getElementById("navLinks");
+
+      function closeMenu() {
+        links.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open navigation menu");
+        toggle.textContent = "☰";
+      }
+
+      toggle.addEventListener("click", () => {
+        const isOpen = links.classList.toggle("open");
+        document.body.classList.toggle("menu-open", isOpen);
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+        toggle.textContent = isOpen ? "×" : "☰";
+      });
+
+      links.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 680) closeMenu();
+      });
+
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+      const revealElements = document.querySelectorAll(".reveal");
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      if ("IntersectionObserver" in window && !reduceMotion) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        revealElements.forEach((element) => observer.observe(element));
+      } else {
+        revealElements.forEach((element) => element.classList.add("visible"));
+      }
+    })();
+  </script>
+</body>
+</html>
