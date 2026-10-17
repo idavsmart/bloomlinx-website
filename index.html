@@ -11,25 +11,24 @@
 <meta name="keywords" content="beauty creator marketing, influencer marketing, beauty creators, creator partnerships, African beauty creators, beauty campaign strategy">
 <meta name="author" content="Bloomlinx Agency">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://idavsmart.github.io/bloomlinx-website/">
+<link rel="canonical" href="https://bloomlinxagency.site">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Bloomlinx Agency">
 <meta property="og:title" content="Bloomlinx Agency | Beauty is personal. Marketing should be too.">
 <meta property="og:description" content="Thoughtful creator partnerships for beauty brands, built from Africa with an international outlook.">
-<meta property="og:url" content="https://idavsmart.github.io/bloomlinx-website/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1200&q=85">
+<meta property="og:url" content="https://bloomlinxagency.site">
+<meta property="og:image" content="https://bloomlinxagency.site/images/bloomlinx-logo.png">
 <meta property="og:image:alt" content="Editorial beauty products in a considered studio setting">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bloomlinx Agency | Beauty Creator Marketing">
 <meta name="twitter:description" content="Thoughtful creator partnerships for beauty brands across Africa and international markets.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1200&q=85">
+<meta name="twitter:image" content="https://bloomlinxagency.site/images/bloomlinx-logo.png">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2317201b'/%3E%3Cpath d='M32 12c7 8 7 13 0 20-7-7-7-12 0-20Zm20 20c-8 7-13 7-20 0 7-7 12-7 20 0ZM32 52c-7-8-7-13 0-20 7 7 7 12 0 20ZM12 32c8-7 13-7 20 0-7 7-12 7-20 0Z' fill='%23e9b8aa'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23f7f5ef'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="images/bloomlinx-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js');</script>
 
 <script type="application/ld+json">
@@ -37,8 +36,8 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Bloomlinx Agency",
-  "url": "https://idavsmart.github.io/bloomlinx-website/",
-  "logo": "https://idavsmart.github.io/bloomlinx-website/images/bloomlinx-logo.png",
+  "url": "https://bloomlinxagency.site",
+  "logo": "https://bloomlinxagency.siteimages/bloomlinx-logo.png",
   "description": "Beauty creator marketing connecting brands with relevant creators across Africa and international markets.",
   "email": "partnership@bloomlinxagency.site",
   "sameAs": ["https://www.instagram.com/bloomlinx.agency/"],
@@ -67,7 +66,7 @@
   --line-light: rgba(255,255,255,.16);
   --serif: "Playfair Display", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
-  --modern: "Manrope", Arial, sans-serif;
+  --modern: var(--sans);
   --container: 1280px;
   --gutter: clamp(20px, 4vw, 56px);
   --ease: cubic-bezier(.22, 1, .36, 1);
@@ -133,7 +132,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 
 /* Hero */
 .hero { position: relative; isolation: isolate; padding: clamp(132px, 15vw, 190px) 0 78px; overflow: hidden; }
-.hero::before { content: ""; position: absolute; z-index: -1; top: 65px; right: -240px; width: min(60vw, 820px); aspect-ratio: 1; border: 1px solid rgba(53,74,62,.085); border-radius: 50%; box-shadow: 0 0 0 70px rgba(53,74,62,.018), 0 0 0 145px rgba(53,74,62,.014); pointer-events: none; }
+.hero::before { content: ""; position: absolute; z-index: -1; right: 4%; top: 110px; width: 120px; height: 1px; background: var(--blush); opacity: .7; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, .98fr) minmax(0, 1.02fr); align-items: center; gap: clamp(40px, 7vw, 100px); }
 .hero-copy { position: relative; z-index: 2; padding: 20px 0 36px; }
 .hero-kicker { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 27px; }
@@ -146,7 +145,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
 .hero-proofline { display: flex; align-items: center; flex-wrap: wrap; gap: 13px 20px; margin-top: 42px; color: #6d756e; font: 500 10px/1.5 var(--modern); letter-spacing: .07em; text-transform: uppercase; }
 .proof-item { display: inline-flex; align-items: center; gap: 8px; }
-.proof-item::before { content: "✳"; color: var(--blush); font-size: 13px; }
+.proof-item::before { content: "•"; color: var(--blush); font-size: 13px; }
 .hero-visual { position: relative; min-height: clamp(460px, 52vw, 675px); opacity: 1; }
 .hero-image-main { position: absolute; right: 2%; top: 0; width: 75%; height: 88%; object-fit: cover; object-position: center; filter: saturate(.84); }
 .hero-image-small { position: absolute; left: 0; bottom: 2%; width: 41%; height: 42%; object-fit: cover; object-position: center; border: 10px solid var(--paper); filter: saturate(.82); }
@@ -159,14 +158,31 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 .hero-index { position: absolute; top: 16%; left: 1%; writing-mode: vertical-rl; transform: rotate(180deg); color: #818b82; font: 600 9px/1 var(--modern); letter-spacing: .2em; text-transform: uppercase; }
 .image-corner { position: absolute; right: 1%; top: -12px; width: 34px; height: 34px; border-top: 1px solid var(--forest); border-right: 1px solid var(--forest); }
 
-/* Motion strip */
-.marquee { overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 19px 0; background: rgba(243,240,232,.54); }
-.marquee-track { display: flex; width: max-content; animation: marquee-drift 34s linear infinite; }
-.marquee:hover .marquee-track, .marquee:focus-within .marquee-track { animation-play-state: paused; }
-.marquee-group { display: flex; align-items: center; flex: 0 0 auto; gap: clamp(22px, 3vw, 42px); padding-right: clamp(22px, 3vw, 42px); }
-.marquee span { color: #626c64; font: 400 18px/1.3 var(--serif); white-space: nowrap; }
-.marquee .dot { color: #cd9585; font: 400 13px/1 var(--sans); }
-@keyframes marquee-drift { to { transform: translateX(-50%); } }
+
+/* Visual story + floating keyword board */
+.visual-story { padding: clamp(70px, 9vw, 120px) 0; background: var(--paper); overflow: hidden; }
+.visual-story-head { display:flex; justify-content:space-between; align-items:flex-end; gap:35px; margin-bottom:38px; }
+.visual-story-title { max-width:780px; margin:22px 0 0; font-size:clamp(48px,6vw,82px); line-height:.94; }
+.visual-story-note { max-width:330px; margin:0 0 5px; color:var(--muted); font-size:13px; line-height:1.8; }
+.visual-collage { display:grid; grid-template-columns:1.15fr .85fr .72fr; grid-template-rows:260px 220px; gap:12px; }
+.story-image { position:relative; overflow:hidden; min-width:0; background:#ddd; }
+.story-image img { width:100%; height:100%; object-fit:cover; filter:saturate(.9); transition:transform 1.1s var(--ease), filter .5s ease; }
+.story-image:hover img { transform:scale(1.045); filter:saturate(1); }
+.story-image.tall { grid-row:1 / span 2; }
+.story-image.wide { grid-column:2 / span 2; }
+.story-image-label { position:absolute; left:15px; bottom:15px; z-index:2; padding:8px 10px; background:rgba(250,249,245,.9); color:var(--ink); font:700 8px/1.4 var(--modern); letter-spacing:.13em; text-transform:uppercase; }
+.keyword-board { position:relative; margin-top:28px; min-height:118px; overflow:hidden; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--cream); }
+.keyword-track { position:absolute; left:0; top:50%; display:flex; align-items:center; gap:13px; width:max-content; transform:translateY(-50%); animation:keyword-slide 30s linear infinite; }
+.keyword-board:hover .keyword-track { animation-play-state:paused; }
+.keyword-chip { display:inline-flex; align-items:center; gap:9px; padding:15px 19px; border:1px solid rgba(53,74,62,.18); border-radius:3px; background:rgba(250,249,245,.82); color:var(--ink); white-space:nowrap; box-shadow:0 10px 28px rgba(32,37,33,.045); font:600 11px/1 var(--modern); letter-spacing:.06em; text-transform:uppercase; }
+.keyword-chip:nth-child(2n) { transform:translateY(-13px) rotate(-1.5deg); }
+.keyword-chip:nth-child(3n) { transform:translateY(10px) rotate(1.2deg); background:var(--deep); color:#fff; border-color:rgba(255,255,255,.12); }
+.keyword-chip:nth-child(4n) { border-radius:999px; background:var(--blush); border-color:transparent; }
+.keyword-dot { width:5px; height:5px; border-radius:50%; background:var(--forest); }
+.keyword-chip:nth-child(3n) .keyword-dot { background:var(--blush); }
+@keyframes keyword-slide { to { transform:translate(-50%, -50%); } }
+.visual-story-mini { display:flex; align-items:center; gap:12px; margin-top:16px; color:#7a827b; font:700 8px/1.5 var(--modern); letter-spacing:.14em; text-transform:uppercase; }
+.visual-story-mini::before { content:""; width:30px; height:1px; background:var(--blush); }
 
 /* Agency intro */
 .intro { background: var(--cream); }
@@ -245,41 +261,30 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 .opportunity-signoff { display: flex; align-items: center; gap: 12px; margin-top: 28px; color: var(--forest); font: 700 9px/1.5 var(--modern); letter-spacing: .16em; text-transform: uppercase; }
 .opportunity-signoff::before { content: ""; height: 1px; width: 28px; background: var(--blush); }
 
-/* Audience */
-.audience { background: var(--cream); }
-.audience-header { max-width: 770px; margin: 0 auto 64px; text-align: center; }
-.audience-header .eyebrow { justify-content: center; }
-.audience-title { margin: 22px 0 20px; font-size: clamp(48px, 6.5vw, 82px); line-height: .97; }
-.audience-header p { max-width: 550px; margin: 0 auto; color: var(--muted); font-size: 14px; line-height: 1.8; }
-.audience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.audience-card { position: relative; display: flex; min-height: 560px; flex-direction: column; padding: clamp(30px, 4.2vw, 55px); overflow: hidden; }
-.audience-card.brands { background: var(--ink); color: #fff; }
-.audience-card.creators { background: var(--paper); color: var(--ink); }
-.audience-card::after { content: ""; position: absolute; right: -100px; bottom: -150px; width: 280px; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.12); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.025), 0 0 0 84px rgba(255,255,255,.02); pointer-events: none; }
-.audience-card.creators::after { border-color: rgba(53,74,62,.12); box-shadow: 0 0 0 42px rgba(53,74,62,.025), 0 0 0 84px rgba(53,74,62,.02); }
-.audience-card .eyebrow { position: relative; z-index: 1; }
-.audience-card.brands .eyebrow { color: #c3d0c7; }
-.audience-card h3 { position: relative; z-index: 1; max-width: 470px; margin: 42px 0 23px; font: 400 clamp(39px, 4.1vw, 55px)/.99 var(--serif); letter-spacing: -.04em; }
-.audience-card p { position: relative; z-index: 1; max-width: 450px; margin: 0; font-size: 13px; line-height: 1.9; }
-.audience-card.brands p { color: #b9c3bc; }
-.audience-card.creators p { color: var(--muted); }
-.audience-list { position: relative; z-index: 1; display: grid; gap: 0; margin-top: auto; padding-top: 38px; }
-.audience-list div { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 0; border-top: 1px solid var(--line-light); font-size: 11px; }
-.audience-card.creators .audience-list div { border-color: var(--line); }
-.audience-list span:last-child { color: var(--blush); font: 400 14px/1 var(--serif); }
-.audience-card.creators .audience-list span:last-child { color: var(--forest); }
+  
+.concept { background: var(--cream); }
+.concept-grid { display:grid; grid-template-columns:180px minmax(0,1fr); gap:clamp(35px,7vw,90px); align-items:start; }
+.concept-label { display:flex; flex-direction:column; gap:20px; }
+.concept-no { color:#7f897f; font:700 9px/1.5 var(--modern); letter-spacing:.14em; text-transform:uppercase; }
+.concept-copy h2 { max-width:850px; margin:0 0 45px; font-size:clamp(42px,5.3vw,70px); line-height:.98; }
+.concept-copy h2 em { color:var(--forest); font-weight:400; }
+.concept-columns { display:grid; grid-template-columns:1fr 1fr; gap:30px; padding-top:22px; border-top:1px solid var(--line); }
+.concept-columns strong { display:block; margin-bottom:10px; font:400 23px/1.2 var(--serif); }
+.concept-columns p { max-width:430px; margin:0; color:var(--muted); font-size:12px; line-height:1.85; }
 
 /* Creator network */
+.network-intro { display:grid; grid-template-columns:180px minmax(0,1fr); gap:25px; align-items:start; margin:0 0 26px; padding:18px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); color:var(--muted); font-size:11px; line-height:1.8; }
+.network-intro > span:first-child { color:var(--forest); font:700 9px/1.5 var(--modern); letter-spacing:.16em; text-transform:uppercase; }
+.opportunity-map { min-height:clamp(490px,54vw,700px); display:flex; flex-direction:column; justify-content:center; gap:0; padding:clamp(28px,4vw,55px); background:var(--deep); color:#fff; }
+.opportunity-map span { display:block; padding:18px 0; font:400 clamp(30px,4vw,54px)/1 var(--serif); border-bottom:1px solid rgba(255,255,255,.14); }
+.opportunity-map span:first-child { color:var(--blush); }
+.opportunity-map i { display:block; width:1px; height:20px; margin-left:15px; background:var(--blush); opacity:.8; }
+.creator-art.art-oreva { --art-bg:#d7dfd6; }
+
 .network { background: var(--paper); }
 .network-header { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(260px, .75fr); align-items: end; gap: clamp(35px, 7vw, 90px); margin-bottom: 48px; }
 .network-title { margin: 22px 0 0; font-size: clamp(52px, 6.7vw, 88px); line-height: .93; }
 .network-description { max-width: 440px; margin: 0 0 6px; color: var(--muted); font-size: 14px; line-height: 1.9; }
-.network-tools { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 25px; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.network-tools-label { color: #707971; font: 700 9px/1.5 var(--modern); letter-spacing: .16em; text-transform: uppercase; }
-.network-filters { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.filter-select { min-width: 160px; padding: 11px 36px 11px 13px; border: 1px solid var(--line); border-radius: 100px; background: transparent; color: var(--ink); font-size: 11px; cursor: pointer; }
-.filter-select:focus-visible { outline-offset: 2px; }
-.creator-count { color: var(--muted); font-size: 10px; }
 .creator-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: stretch; }
 .creator-card { min-width: 0; display: flex; flex-direction: column; background: #fff; border: 1px solid rgba(32,37,33,.09); transition: transform .4s var(--ease), box-shadow .4s ease, border-color .3s ease; }
 .creator-card:hover { transform: translateY(-5px); border-color: rgba(53,74,62,.25); box-shadow: var(--shadow-soft); }
@@ -376,34 +381,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 .preview-actions .button { cursor: pointer; }
 @media (max-width: 600px) { .brief-insight { gap: 10px; } .brief-score { width: 51px; height: 51px; } }
 
-
-/* Process */
-.process { background: #fff; }
-.process-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 35px; margin-bottom: 68px; }
-.process-title { max-width: 760px; margin: 22px 0 0; font-size: clamp(49px, 6.4vw, 84px); line-height: .94; }
-.process-header .section-intro { max-width: 330px; margin-bottom: 4px; }
-.process-row { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); border-top: 1px solid var(--line); }
-.process-item { min-height: 240px; padding: 30px 22px 24px 0; margin-right: 22px; border-right: 1px solid var(--line); }
-.process-item:last-child { margin-right: 0; border-right: 0; }
-.process-num { margin-bottom: 48px; color: #c69b8d; font: 400 15px/1 var(--serif); }
-.process-item h3 { margin: 0 0 12px; font: 400 26px/1.1 var(--serif); }
-.process-item p { max-width: 210px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.85; }
-
-/* Manifesto */
-.manifesto { position: relative; isolation: isolate; overflow: hidden; padding: clamp(125px, 16vw, 205px) 0; background: var(--deep); color: #fff; text-align: center; }
-.manifesto::before, .manifesto::after { content: ""; position: absolute; z-index: -1; border: 1px solid rgba(255,255,255,.07); border-radius: 50%; pointer-events: none; }
-.manifesto::before { width: min(58vw, 720px); aspect-ratio: 1; left: -24%; top: -55%; box-shadow: 0 0 0 65px rgba(255,255,255,.015), 0 0 0 130px rgba(255,255,255,.01); }
-.manifesto::after { width: min(65vw, 800px); aspect-ratio: 1; right: -32%; bottom: -70%; box-shadow: 0 0 0 65px rgba(255,255,255,.015), 0 0 0 130px rgba(255,255,255,.01); }
-.manifesto .eyebrow { color: #c1cdc5; justify-content: center; }
-.manifesto .eyebrow::before { background: var(--blush); }
-.manifesto h2 { max-width: 1120px; margin: 30px auto 26px; font: 400 clamp(52px, 7.6vw, 105px)/.96 var(--serif); letter-spacing: -.06em; }
-.manifesto h2 em { color: var(--blush); font-weight: 400; }
-.manifesto p { max-width: 600px; margin: 0 auto; color: #b8c3bb; font-size: 14px; line-height: 1.9; }
-.manifesto .manifesto-cta { margin-top: 32px; }
-.manifesto .button-light { background: transparent; border-color: rgba(255,255,255,.3); color: #fff; }
-.manifesto .button-light:hover { background: #fff; color: var(--ink); }
-
-/* Contact */
+  /* Contact */
 .contact { padding: clamp(100px, 12vw, 155px) 0; }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .7fr); gap: clamp(50px, 9vw, 120px); align-items: end; }
 .contact-title { margin: 23px 0 0; font-size: clamp(60px, 8vw, 110px); line-height: .87; }
@@ -458,9 +436,21 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   .service-card { min-height: 300px; }
   .creator-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .creator-art { min-height: 190px; }
-  .process-row { grid-template-columns: repeat(3, minmax(0,1fr)); }
-  .process-item:nth-child(3) { border-right: 0; }
-  .process-item:nth-child(n+4) { border-top: 1px solid var(--line); }
+}
+@media (max-width: 850px) {
+  .visual-story-head { display:block; }
+  .visual-story-note { margin-top:22px; max-width:600px; }
+  .visual-collage { grid-template-columns:1fr 1fr; grid-template-rows:260px 220px 220px; }
+  .story-image.tall { grid-row:1 / span 2; }
+  .story-image.wide { grid-column:1 / -1; grid-row:3; }
+}
+@media (max-width: 600px) {
+  .visual-story { padding:72px 0 0; }
+  .visual-story-title { font-size:clamp(44px,11.5vw,62px); }
+  .visual-collage { grid-template-columns:1fr; grid-template-rows:300px 220px 220px 220px; gap:9px; }
+  .story-image.tall, .story-image.wide { grid-column:auto; grid-row:auto; }
+  .keyword-board { min-height:105px; }
+  .keyword-chip { padding:13px 16px; font-size:9px; }
 }
 @media (max-width: 850px) {
   :root { --gutter: 28px; }
@@ -549,9 +539,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   .audience-card { min-height: 510px; padding: 30px 25px; }
   .audience-card h3 { font-size: 45px; margin-top: 34px; }
   .network-title { font-size: clamp(52px, 13vw, 70px); }
-  .network-tools { align-items: flex-start; flex-direction: column; }
-  .network-filters { width: 100%; }
-  .filter-select { flex: 1 1 145px; min-width: 0; }
+  .network-intro { grid-template-columns: 1fr; gap: 8px; }
   .creator-grid { grid-template-columns: 1fr; gap: 13px; }
   .creator-art { min-height: 190px; }
   .creator-card-body { padding: 23px; }
@@ -583,6 +571,8 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   .contact-grid { gap: 38px; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 35px 24px; padding-bottom: 42px; }
   .footer-brand { grid-column: 1 / -1; }
+  .concept-grid { grid-template-columns: 1fr; gap: 28px; }
+  .concept-columns { grid-template-columns: 1fr; gap: 22px; }
   .footer-bottom { align-items: flex-start; flex-direction: column; gap: 9px; }
 }
 @media (max-width: 360px) {
@@ -600,7 +590,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   .marquee-track { animation: none !important; }
 }
 @media print {
-  .site-header, .page-progress, .marquee, .studio, .menu-btn, .nav-cta { display: none !important; }
+  .site-header, .studio, .menu-btn, .nav-cta { display: none !important; }
   body { background: #fff; color: #000; }
   .section { padding: 35px 0; }
   .js .reveal { opacity: 1; transform: none; }
@@ -618,10 +608,10 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
       <img src="images/bloomlinx-logo.png" alt="Bloomlinx Agency" width="300" height="76" fetchpriority="high">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#about">About</a>
+      <a href="#approach">Approach</a>
       <a href="#services">Services</a>
       <a href="#network">Creators</a>
-      <a href="#studio">Campaign studio</a>
+      <a href="#studio">Studio</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="nav-cta" href="#contact">Start a conversation <span class="button-arrow" aria-hidden="true">↗</span></a>
@@ -632,11 +622,10 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 </header>
 
 <nav class="mobile-panel" id="mobilePanel" aria-label="Mobile navigation" inert>
-  <a href="#about">About</a>
+  <a href="#approach">Approach</a>
   <a href="#services">Services</a>
   <a href="#network">Creators</a>
-  <a href="#studio">Campaign studio</a>
-  <a href="#approach">Our approach</a>
+  <a href="#studio">Studio</a>
   <a href="#contact">Contact</a>
   <p class="mobile-panel-note">Beauty × Creators × Culture<br>Built from Africa. Looking outward.</p>
 </nav>
@@ -649,52 +638,67 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
           <span class="live-dot" aria-hidden="true"></span>
           <span class="kicker-text">Independent beauty creator marketing · Africa & beyond</span>
         </div>
-        <h1 class="hero-title" id="hero-title"><span class="line">Where beauty</span><span class="line"><em>finds influence.</em></span></h1>
-        <p class="hero-description">We connect beauty brands with creators whose voices, communities and content make sense for the story a brand needs to tell. Strategy first. People always.</p>
+        <h1 class="hero-title" id="hero-title"><span class="line">We don't start</span><span class="line"><em>with creators.</em></span></h1>
+        <p class="hero-description">We start with the brand, the audience and the problem to solve. Then we find the creators who can make the idea credible, useful and culturally relevant.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#contact">Work with Bloomlinx <span class="button-arrow" aria-hidden="true">↗</span></a>
           <a class="button button-light" href="#network">Explore the network <span class="button-arrow" aria-hidden="true">↘</span></a>
         </div>
         <div class="hero-proofline" aria-label="Bloomlinx working principles">
-          <span class="proof-item">Strategy-led</span>
-          <span class="proof-item">Creator-first</span>
-          <span class="proof-item">Campaign-based</span>
+          <span class="proof-item">Brand-led</span>
+          <span class="proof-item">Creator-matched</span>
+          <span class="proof-item">Campaign-ready</span>
         </div>
       </div>
 
       <div class="hero-visual" aria-label="Beauty editorial imagery">
         <div class="image-corner" aria-hidden="true"></div>
-        <span class="hero-index" aria-hidden="true">Bloomlinx · Field notes 001</span>
+        <span class="hero-index" aria-hidden="true">Bloomlinx · Brand first</span>
         <div class="hero-image-main-wrap image-mask reveal-image">
           <img class="hero-image-main" src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1300&q=85" alt="Carefully arranged beauty and makeup products" width="1000" height="1250" fetchpriority="high">
         </div>
         <img class="hero-image-small" src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=700&q=85" alt="Skincare products in a neutral setting" width="650" height="700" loading="eager">
         <div class="hero-caption">
-          <div class="hero-caption-top"><span>The Bloomlinx lens</span><span class="hero-caption-mark" aria-hidden="true">✳</span></div>
-          <strong>Meaningful beauty influence.</strong>
-          <small>Built around people, context and connection.</small>
+          <div class="hero-caption-top"><span>The Bloomlinx lens</span><span class="hero-caption-mark" aria-hidden="true">•</span></div>
+          <strong>Start with the reason.</strong>
+          <small>Brand problem → audience → idea → creator.</small>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="marquee" aria-label="Bloomlinx focus areas">
-    <div class="marquee-track">
-      <div class="marquee-group"><span>Beauty creators</span><span class="dot" aria-hidden="true">✳</span><span>Strategic campaigns</span><span class="dot" aria-hidden="true">✳</span><span>African creativity</span><span class="dot" aria-hidden="true">✳</span><span>Relevant partnerships</span><span class="dot" aria-hidden="true">✳</span><span>Culture and context</span><span class="dot" aria-hidden="true">✳</span></div>
-      <div class="marquee-group" aria-hidden="true"><span>Beauty creators</span><span class="dot">✳</span><span>Strategic campaigns</span><span class="dot">✳</span><span>African creativity</span><span class="dot">✳</span><span>Relevant partnerships</span><span class="dot">✳</span><span>Culture and context</span><span class="dot">✳</span></div>
+  <section class="visual-story" aria-labelledby="visual-story-title">
+    <div class="container">
+      <div class="visual-story-head">
+        <div class="reveal"><span class="eyebrow">The Bloomlinx world</span><h2 class="display-title visual-story-title" id="visual-story-title">Beauty is visual. <em>The strategy should be too.</em></h2></div>
+        <p class="visual-story-note reveal" style="--delay:100ms">Products, people, culture and ideas belong in the same conversation. This is where brand thinking becomes something you can see.</p>
+      </div>
+      <div class="visual-collage">
+        <figure class="story-image tall image-mask reveal"><img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=1100&q=88" alt="Skincare products arranged in a warm editorial setting" loading="lazy" width="900" height="1100"><figcaption class="story-image-label">Product · Context</figcaption></figure>
+        <figure class="story-image wide image-mask reveal" style="--delay:80ms"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=88" alt="Beauty creator preparing makeup content" loading="lazy" width="1200" height="700"><figcaption class="story-image-label">People · Influence</figcaption></figure>
+        <figure class="story-image image-mask reveal" style="--delay:140ms"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=88" alt="Beauty products arranged for a campaign" loading="lazy" width="800" height="700"><figcaption class="story-image-label">Product · Story</figcaption></figure>
+        <figure class="story-image image-mask reveal" style="--delay:200ms"><img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=88" alt="Skincare essentials in an editorial composition" loading="lazy" width="800" height="700"><figcaption class="story-image-label">Audience · Relevance</figcaption></figure>
+      </div>
+      <div class="visual-story-mini">Brand problem · audience · idea · creator · activation</div>
     </div>
-  </div>
+    <div class="keyword-board" aria-label="Bloomlinx moving keywords">
+      <div class="keyword-track">
+        <span class="keyword-chip"><i class="keyword-dot"></i>Beauty</span><span class="keyword-chip"><i class="keyword-dot"></i>Creator intelligence</span><span class="keyword-chip"><i class="keyword-dot"></i>Market entry</span><span class="keyword-chip"><i class="keyword-dot"></i>Campaign strategy</span><span class="keyword-chip"><i class="keyword-dot"></i>Culture</span><span class="keyword-chip"><i class="keyword-dot"></i>Audience fit</span><span class="keyword-chip"><i class="keyword-dot"></i>Skincare</span><span class="keyword-chip"><i class="keyword-dot"></i>Trust</span><span class="keyword-chip"><i class="keyword-dot"></i>Global beauty</span><span class="keyword-chip"><i class="keyword-dot"></i>Creative direction</span>
+        <span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Beauty</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Creator intelligence</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Market entry</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Campaign strategy</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Culture</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Audience fit</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Skincare</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Trust</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Global beauty</span><span class="keyword-chip" aria-hidden="true"><i class="keyword-dot"></i>Creative direction</span>
+      </div>
+    </div>
+  </section>
 
   <section class="section intro" id="about" aria-labelledby="intro-title">
     <div class="container intro-grid">
       <div class="reveal">
         <span class="eyebrow">The agency</span>
-        <h2 class="display-title intro-title" id="intro-title">More than <em>influence.</em></h2>
+        <h2 class="display-title intro-title" id="intro-title">The work starts <em>before</em> the creator.</h2>
       </div>
       <div class="intro-copy reveal" style="--delay:100ms">
         <p>The beauty industry does not need more noise. It needs better connections between brands, people and culture.</p>
         <p>Bloomlinx exists to make those connections more intentional. We get to know the brand, clarify the opportunity, consider the people it needs to reach and identify creators whose content and communities make sense for the brief.</p>
-        <p>Our work sits where strategy meets creativity. We help move brand and creator conversations toward partnerships with a reason behind them, clear expectations and room for good creative work.</p>
+        <p>The result is a clearer path from business problem to campaign idea to creator partnership.</p>
         <div class="intro-signature">Built from Africa. Open to the world.</div>
       </div>
     </div>
@@ -722,7 +726,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   <section class="section" id="services" aria-labelledby="services-title">
     <div class="container">
       <div class="services-header">
-        <div class="reveal"><span class="eyebrow">What we do</span><h2 class="display-title services-title" id="services-title">Strategy with <em>creative gravity.</em></h2></div>
+        <div class="reveal"><span class="eyebrow">What we do</span><h2 class="display-title services-title" id="services-title">What we actually <em>do.</em></h2></div>
         <p class="section-intro reveal" style="--delay:100ms">A focused set of services designed to make beauty creator marketing more thoughtful, coordinated and commercially relevant.</p>
       </div>
       <div class="services-grid">
@@ -734,49 +738,32 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     </div>
   </section>
 
-  <section class="section field-note" aria-labelledby="field-note-title">
-    <div class="container">
-      <div class="field-note-grid reveal">
-        <div class="field-note-visual image-mask">
-          <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1100&q=85" alt="Beauty editorial still life with softly lit skincare products" width="1000" height="900" loading="lazy">
-          <span class="field-note-stamp"><span aria-hidden="true">✳</span> An illustrative direction</span>
-        </div>
-        <div class="field-note-content">
-          <div><span class="eyebrow eyebrow-light">A campaign thought</span><h2 id="field-note-title">A routine is more than a product shot. <em>It's a story.</em></h2><p>For a skincare launch, an illustrative direction might follow the small moments that make a routine personal: how a product is introduced, where it fits, what the creator genuinely notices and which questions their audience asks.</p></div>
-          <div class="field-note-bottom"><span>Example concept only. Not a client campaign, endorsement or reported result.</span><a href="#studio">Shape your brief <span class="button-arrow" aria-hidden="true">↗</span></a></div>
-        </div>
-      </div>
-      <small class="disclaimer">This concept is provided to demonstrate our strategic thinking. It does not represent a completed campaign or promise a particular outcome.</small>
-    </div>
-  </section>
-
   <section class="section opportunity" id="opportunity" aria-labelledby="opportunity-title">
     <div class="container opportunity-grid">
       <div class="opportunity-media reveal">
-        <img class="opportunity-image" src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=1100&q=85" alt="Skincare essentials arranged in a clean, understated editorial composition" width="900" height="1200" loading="lazy">
-        <div class="opportunity-image-caption"><span>Beauty × People × Context</span><span>BL / 002</span></div>
+        <div class="opportunity-map" aria-hidden="true"><span>BRAND</span><i></i><span>PROBLEM</span><i></i><span>AUDIENCE</span><i></i><span>IDEA</span><i></i><span>CREATOR</span></div>
+        <div class="opportunity-image-caption"><span>The Bloomlinx lens</span><span>01</span></div>
       </div>
       <div class="opportunity-copy reveal" style="--delay:100ms">
         <span class="eyebrow">The opportunity</span>
         <h2 class="display-title opportunity-title" id="opportunity-title">Beauty is personal.<em>Marketing should be too.</em></h2>
-        <p class="opportunity-lead">The most valuable creator partnerships are not built by placing products in front of random audiences. They are built around relevance, trust and context.</p>
-        <p>Beauty is personal. People choose the products they use through a mix of routine, experience, identity, recommendations and the voices they trust. A product may earn a glance, but a creator who understands their community can help turn it into a conversation that feels useful and genuine.</p>
-        <p>For brands, that means looking beyond follower counts to ask better questions. Who does this creator reach? What does their audience care about? Does the product belong in their content? Is the collaboration credible in the market where it will appear?</p>
-        <p>For creators, a good partnership should respect the voice and relationship they have built with their audience. Clear expectations, an appropriate brief and room for honest creative expression matter just as much as the opportunity itself.</p>
-        <p>Bloomlinx brings these considerations into the matching process. We study the brand, the audience, the creator and the wider cultural context before helping move a partnership forward. Our focus is not simply to make a connection, but to make one with a clear reason to exist.</p>
-        <p>Built from Africa with an international outlook, we see beauty creator marketing as an opportunity to connect brands and relevant voices across markets, communities and perspectives.</p>
-        <div class="opportunity-pullquote">Better partnerships begin with understanding people, not just counting impressions.</div>
+        <p class="opportunity-lead">The strongest creator partnerships begin with a reason to exist.</p>
+        <p>Before we ask who should post, we ask what the brand needs to change, explain, launch or reach.</p>
+        <p>That changes the work. The audience becomes part of the decision. The market matters. The creator is chosen for relevance, not simply availability.</p>
+        <div class="opportunity-pullquote">Better matches come from better questions.</div>
         <div class="opportunity-signoff">People before platforms</div>
       </div>
     </div>
   </section>
 
-  <section class="section audience" aria-labelledby="audience-title">
-    <div class="container">
-      <div class="audience-header reveal"><span class="eyebrow">Two sides. One ecosystem.</span><h2 class="display-title audience-title" id="audience-title">Built for the people <em>shaping beauty.</em></h2><p>Better creator marketing starts when each side understands what the other needs and what a successful collaboration should look like.</p></div>
-      <div class="audience-grid">
-        <article class="audience-card brands reveal"><span class="eyebrow">For brands</span><h3>Your next audience deserves more than another impression.</h3><p>We help beauty brands approach creator marketing with intention, finding relevant voices and developing a clear path from brief to partnership.</p><div class="audience-list"><div><span>Creator discovery</span><span>01</span></div><div><span>Campaign direction</span><span>02</span></div><div><span>Audience relevance</span><span>03</span></div><div><span>Professional coordination</span><span>04</span></div></div></article>
-        <article class="audience-card creators reveal" style="--delay:100ms"><span class="eyebrow">For creators</span><h3>Your creative identity belongs in the conversation.</h3><p>We work to connect beauty creators with brand opportunities that make sense for their content, their audience and the way they want to create.</p><div class="audience-list"><div><span>Relevant brand briefs</span><span>01</span></div><div><span>Clear deliverables</span><span>02</span></div><div><span>Campaign-based collaboration</span><span>03</span></div><div><span>Respect for creative voice</span><span>04</span></div></div></article>
+
+  <section class="section concept" aria-labelledby="concept-title">
+    <div class="container concept-grid reveal">
+      <div class="concept-label"><span class="eyebrow">Illustrative campaign concept</span><span class="concept-no">02 / 02</span></div>
+      <div class="concept-copy">
+        <h2 class="display-title" id="concept-title">When a brand enters a new market, <em>context becomes part of the campaign.</em></h2>
+        <div class="concept-columns"><div><strong>The challenge</strong><p>A beauty brand has a strong product but limited familiarity in a new market.</p></div><div><strong>The direction</strong><p>Use creators who can place the product inside real routines, answer local questions and make the brand feel understandable before asking for a purchase.</p></div></div>
+        <p class="disclaimer">Illustrative concept only. Not a client campaign, endorsement or reported result.</p>
       </div>
     </div>
   </section>
@@ -784,19 +771,10 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   <section class="section network" id="network" aria-labelledby="network-title">
     <div class="container">
       <div class="network-header">
-        <div class="reveal"><span class="eyebrow">Creator network</span><h2 class="display-title network-title" id="network-title">People are <em>the platform.</em></h2></div>
-        <p class="network-description reveal" style="--delay:100ms">A growing network of beauty creators with different audiences, perspectives and creative strengths. We approach every brief individually rather than treating creators as interchangeable inventory.</p>
+        <div class="reveal"><span class="eyebrow">Creator network</span><h2 class="display-title network-title" id="network-title">Selected people.<em>Specific purpose.</em></h2></div>
+        <p class="network-description reveal" style="--delay:100ms">A curated view of the creator network we can consider for relevant beauty briefs. Availability and fit are assessed campaign by campaign.</p>
       </div>
-      <div class="network-tools reveal">
-        <span class="network-tools-label">Explore the network</span>
-        <div class="network-filters">
-          <label class="sr-only" for="categoryFilter">Filter by category</label>
-          <select class="filter-select" id="categoryFilter"><option value="all">All categories</option><option value="beauty">Beauty</option><option value="skincare">Skincare</option></select>
-          <label class="sr-only" for="platformFilter">Filter by platform</label>
-          <select class="filter-select" id="platformFilter"><option value="all">All platforms</option><option value="tiktok">TikTok</option></select>
-        </div>
-        <span class="creator-count" id="creatorCount" aria-live="polite">5 profiles in this showcase</span>
-      </div>
+      <div class="network-intro reveal"><span>Selected talent</span><span>Profiles shown here are part of a growing network and are considered according to campaign objective, audience, market and content requirements. This is not a public marketplace.</span></div>
 
       <div class="creator-grid" id="creatorGrid">
         <article class="creator-card reveal" data-category="beauty" data-platform="tiktok" style="--delay:0ms">
@@ -807,16 +785,21 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
           <div class="creator-art art-lora" aria-hidden="true"><span class="creator-art-label">Creator profile · 02</span><span class="creator-initials">LM</span><span class="creator-art-index">BL / 02</span></div>
           <div class="creator-card-body"><div class="creator-platform"><span>TikTok</span><span class="creator-category">Skincare</span></div><h3 class="creator-name">Lora Muruha</h3><div class="creator-handle">@lora.decoded</div><div class="creator-metrics"><div class="creator-metric"><strong>9.9K</strong><span>Followers recorded</span></div><div class="creator-metric"><strong>210K+</strong><span>Likes recorded</span></div></div><div class="creator-card-foot"><a class="creator-link" href="https://www.tiktok.com/@lora.decoded" target="_blank" rel="noopener noreferrer">View TikTok <span aria-hidden="true">↗</span></a><a class="creator-link" href="https://www.instagram.com/ily.lora/" target="_blank" rel="noopener noreferrer" aria-label="View Lora Muruha on Instagram">Instagram <span aria-hidden="true">↗</span></a></div></div>
         </article>
-        <article class="creator-card reveal" data-category="beauty" data-platform="tiktok" style="--delay:140ms">
-          <div class="creator-art art-alaric" aria-hidden="true"><span class="creator-art-label">Creator profile · 03</span><span class="creator-initials">A</span><span class="creator-art-index">BL / 03</span></div>
+
+        <article class="creator-card reveal" style="--delay:210ms">
+          <div class="creator-art art-oreva" aria-hidden="true"><span class="creator-art-label">Creator profile · 03</span><span class="creator-initials">OR</span><span class="creator-art-index">BL / 03</span></div>
+          <div class="creator-card-body"><div class="creator-platform"><span>TikTok + Instagram</span><span class="creator-category">Skincare</span></div><h3 class="creator-name">Oreva Arupi</h3><div class="creator-handle">@skinwithreva</div><div class="creator-metrics"><div class="creator-metric"><strong>45.6K</strong><span>TikTok followers</span></div><div class="creator-metric"><strong>288K</strong><span>TikTok likes</span></div></div><div class="creator-card-foot"><a class="creator-link" href="https://www.tiktok.com/@skinwithreva" target="_blank" rel="noopener noreferrer">View TikTok <span aria-hidden="true">↗</span></a><a class="creator-link" href="https://www.instagram.com/skinwithreva/" target="_blank" rel="noopener noreferrer" aria-label="View Oreva Arupi on Instagram">Instagram <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="creator-card reveal" data-category="beauty" data-platform="tiktok" style="--delay:280ms">
+          <div class="creator-art art-alaric" aria-hidden="true"><span class="creator-art-label">Creator profile · 04</span><span class="creator-initials">A</span><span class="creator-art-index">BL / 04</span></div>
           <div class="creator-card-body"><div class="creator-platform"><span>TikTok</span><span class="creator-category">Beauty creator</span></div><h3 class="creator-name">Alaric</h3><div class="creator-handle">Profile shared for campaign matching</div><div class="creator-metrics"><div class="creator-metric"><strong>3,632</strong><span>Followers recorded</span></div><div class="creator-metric"><strong>280.8K</strong><span>Likes recorded</span></div></div><div class="creator-card-foot"><a class="creator-link" href="mailto:partnership@bloomlinxagency.site?subject=Alaric%20creator%20profile%20request">Request profile <span aria-hidden="true">↗</span></a><span class="muted" style="font-size:9px">By enquiry</span></div></div>
         </article>
         <article class="creator-card reveal" data-category="beauty" data-platform="tiktok" style="--delay:0ms">
-          <div class="creator-art art-diya" aria-hidden="true"><span class="creator-art-label">Creator profile · 04</span><span class="creator-initials">DS</span><span class="creator-art-index">BL / 04</span></div>
+          <div class="creator-art art-diya" aria-hidden="true"><span class="creator-art-label">Creator profile · 05</span><span class="creator-initials">DS</span><span class="creator-art-index">BL / 05</span></div>
           <div class="creator-card-body"><div class="creator-platform"><span>TikTok</span><span class="creator-category">Beauty creator</span></div><h3 class="creator-name">Diya Shrestha</h3><div class="creator-handle">Profile shared for campaign matching</div><div class="creator-metrics"><div class="creator-metric"><strong>1,525</strong><span>Followers recorded</span></div><div class="creator-metric"><strong>38.5K</strong><span>Likes recorded</span></div></div><div class="creator-card-foot"><a class="creator-link" href="mailto:partnership@bloomlinxagency.site?subject=Diya%20Shrestha%20creator%20profile%20request">Request profile <span aria-hidden="true">↗</span></a><span class="muted" style="font-size:9px">By enquiry</span></div></div>
         </article>
         <article class="creator-card reveal" data-category="beauty" data-platform="tiktok" style="--delay:70ms">
-          <div class="creator-art art-mimi" aria-hidden="true"><span class="creator-art-label">Creator profile · 05</span><span class="creator-initials">M</span><span class="creator-art-index">BL / 05</span></div>
+          <div class="creator-art art-mimi" aria-hidden="true"><span class="creator-art-label">Creator profile · 06</span><span class="creator-initials">M</span><span class="creator-art-index">BL / 06</span></div>
           <div class="creator-card-body"><div class="creator-platform"><span>TikTok</span><span class="creator-category">Beauty creator</span></div><h3 class="creator-name">Mimi</h3><div class="creator-handle">Profile shared for campaign matching</div><div class="creator-metrics"><div class="creator-metric"><strong>1,232</strong><span>Followers recorded</span></div><div class="creator-metric"><strong>2,287</strong><span>Likes recorded</span></div></div><div class="creator-card-foot"><a class="creator-link" href="mailto:partnership@bloomlinxagency.site?subject=Mimi%20creator%20profile%20request">Request profile <span aria-hidden="true">↗</span></a><span class="muted" style="font-size:9px">By enquiry</span></div></div>
         </article>
         <article class="creator-card reveal" style="background:var(--cream);border-style:dashed;border-color:rgba(53,74,62,.25);--delay:140ms">
@@ -829,17 +812,10 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     </div>
   </section>
 
-  <section class="section difference" aria-labelledby="difference-title">
+  <section class="section difference" id="difference" aria-labelledby="difference-title">
     <div class="container difference-grid">
-      <div class="reveal"><span class="eyebrow">Why Bloomlinx</span><h2 class="display-title difference-title" id="difference-title">We are building <em>differently.</em></h2></div>
-      <div class="difference-copy reveal" style="--delay:100ms"><p>Follower count is one signal, not the whole story. We believe thoughtful beauty creator marketing starts with relevance, cultural understanding, creative quality and a realistic view of what a collaboration can achieve.</p>
-        <div class="principles">
-          <div class="principle"><div class="principle-number">01</div><div><h4>Relevance over randomness.</h4><p>The right creator is not always the biggest creator. Audience fit and context matter.</p></div></div>
-          <div class="principle"><div class="principle-number">02</div><div><h4>Strategy before outreach.</h4><p>Understand why a partnership makes sense before asking either side to invest in it.</p></div></div>
-          <div class="principle"><div class="principle-number">03</div><div><h4>People before platforms.</h4><p>Platforms change. Trust, creative judgement and human connection still matter.</p></div></div>
-          <div class="principle"><div class="principle-number">04</div><div><h4>Africa is not an afterthought.</h4><p>We are building from Africa while thinking internationally from the beginning.</p></div></div>
-        </div>
-      </div>
+      <div class="reveal"><span class="eyebrow">Why Bloomlinx</span><h2 class="display-title difference-title" id="difference-title">Less noise.<em>Better decisions.</em></h2></div>
+      <div class="difference-copy reveal" style="--delay:100ms"><p>We are building Bloomlinx around a simple belief: creator marketing gets stronger when strategy comes before selection.</p><div class="principles"><div class="principle"><div class="principle-number">01</div><div><h4>Relevance over randomness.</h4><p>Audience, market and context matter more than a headline follower number.</p></div></div><div class="principle"><div class="principle-number">02</div><div><h4>Clear briefs create better work.</h4><p>Creators need a real role, useful direction and room to create.</p></div></div><div class="principle"><div class="principle-number">03</div><div><h4>Africa is part of the strategy.</h4><p>We build from Africa with international markets in view from the beginning.</p></div></div></div></div>
     </div>
   </section>
 
@@ -863,23 +839,6 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     </div>
   </section>
 
-  <section class="section process" aria-labelledby="process-title">
-    <div class="container">
-      <div class="process-header"><div class="reveal"><span class="eyebrow">How collaboration works</span><h2 class="display-title process-title" id="process-title">From first conversation to a clearer connection.</h2></div><p class="section-intro reveal" style="--delay:100ms">A considered process keeps the brief, the creator and the collaboration aligned at every stage.</p></div>
-      <div class="process-row">
-        <article class="process-item reveal" style="--delay:0ms"><div class="process-num">01</div><h3>Discover</h3><p>Clarify the product, audience, objective and the question the campaign needs to answer.</p></article>
-        <article class="process-item reveal" style="--delay:60ms"><div class="process-num">02</div><h3>Strategise</h3><p>Shape the creator role, message, market and campaign direction around the objective.</p></article>
-        <article class="process-item reveal" style="--delay:120ms"><div class="process-num">03</div><h3>Match</h3><p>Assess creator relevance, content, audience context, scope and availability.</p></article>
-        <article class="process-item reveal" style="--delay:180ms"><div class="process-num">04</div><h3>Activate</h3><p>Align communication, deliverables, timing, approvals and collaboration expectations.</p></article>
-        <article class="process-item reveal" style="--delay:240ms"><div class="process-num">05</div><h3>Review</h3><p>Review agreed outputs and available insights, then document useful next steps.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="manifesto" aria-labelledby="manifesto-title">
-    <div class="container reveal"><span class="eyebrow">The Bloomlinx point of view</span><h2 id="manifesto-title">Don't just put a product in front of people. <em>Give it meaning.</em></h2><p>The strongest beauty stories are not forced. They begin when the right brand, the right creator and the right audience meet with purpose.</p><div class="manifesto-cta"><a class="button button-light" href="#contact">Let's make the connection <span class="button-arrow" aria-hidden="true">↗</span></a></div></div>
-  </section>
-
   <section class="contact" id="contact" aria-labelledby="contact-title">
     <div class="container contact-grid">
       <div class="reveal"><span class="eyebrow">Let's build something</span><h2 class="display-title contact-title" id="contact-title">Ready to make <em>the connection?</em></h2></div>
@@ -891,7 +850,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
-      <div class="footer-brand"><a class="footer-brand-logo" href="#top" aria-label="Bloomlinx Agency home"><img src="images/bloomlinx-logo.png" alt="Bloomlinx Agency" width="300" height="76" loading="lazy"></a><p>Beauty creator marketing built from Africa for brands and creators shaping what comes next.</p><div class="footer-mark"><span aria-hidden="true">✳</span> Beauty × Creators × Culture</div></div>
+      <div class="footer-brand"><a class="footer-brand-logo" href="#top" aria-label="Bloomlinx Agency home"><img src="images/bloomlinx-logo.png" alt="Bloomlinx Agency" width="300" height="76" loading="lazy"></a><p>Beauty creator marketing built from Africa for brands and creators shaping what comes next.</p><div class="footer-mark"><span aria-hidden="true">•</span> Beauty × Creators × Culture</div></div>
       <div class="footer-column"><h3>Explore</h3><a href="#about">About Bloomlinx</a><a href="#services">Services</a><a href="#network">Creator network</a><a href="#approach">Our approach</a><a href="#studio">Campaign studio</a></div>
       <div class="footer-column"><h3>Connect</h3><a href="mailto:partnership@bloomlinxagency.site">Brand partnerships</a><a href="mailto:contact@bloomlinxagency.site">General enquiries</a><a href="https://www.instagram.com/bloomlinx.agency/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
     </div>
@@ -904,7 +863,6 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   'use strict';
 
   const header = document.getElementById('siteHeader');
-  const progress = document.getElementById('pageProgress');
   const menuBtn = document.getElementById('menuBtn');
   const mobilePanel = document.getElementById('mobilePanel');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -913,9 +871,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   // One scheduled scroll pass updates the header and thin reading-progress line.
   function updateScrollUI() {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
-    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     header.classList.toggle('scrolled', scrollY > 24);
-    progress.style.width = `${scrollable > 0 ? Math.min(100, (scrollY / scrollable) * 100) : 0}%`;
     scrollTicking = false;
   }
   window.addEventListener('scroll', () => {
@@ -971,28 +927,6 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
   window.addEventListener('resize', () => {
     if (window.innerWidth > 850 && menuBtn.getAttribute('aria-expanded') === 'true') closeMenu();
   }, { passive: true });
-
-  // Creator roster filters.
-  const categoryFilter = document.getElementById('categoryFilter');
-  const platformFilter = document.getElementById('platformFilter');
-  const creatorCards = Array.from(document.querySelectorAll('#creatorGrid .creator-card[data-platform]'));
-  const creatorCount = document.getElementById('creatorCount');
-  function filterCreators() {
-    const category = categoryFilter.value;
-    const platform = platformFilter.value;
-    let visible = 0;
-    creatorCards.forEach(card => {
-      const categories = (card.dataset.category || '').split(/\s+/);
-      const categoryMatch = category === 'all' || categories.includes(category);
-      const platformMatch = platform === 'all' || card.dataset.platform === platform;
-      const show = categoryMatch && platformMatch;
-      card.hidden = !show;
-      if (show) visible += 1;
-    });
-    creatorCount.textContent = `${visible} ${visible === 1 ? 'profile' : 'profiles'} shown`;
-  }
-  categoryFilter.addEventListener('change', filterCreators);
-  platformFilter.addEventListener('change', filterCreators);
 
   // Campaign Fit Studio: builds an email-ready brief locally; no form submission or backend.
   const briefForm = document.getElementById('briefForm');
