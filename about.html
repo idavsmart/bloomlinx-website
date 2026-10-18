@@ -633,6 +633,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 .monogram span{font-family:var(--serif);font-style:italic;font-size:clamp(84px,9vw,128px);color:var(--blush);letter-spacing:-.02em;margin-bottom:90px}
 .talent-card:hover .monogram{filter:brightness(1.08)}.founder-portrait{position:relative;overflow:hidden}
 .founder-portrait .monogram span{margin:0}
+.photo-slot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .trust-strip{border-bottom:1px solid var(--line);background:var(--paper)}
 .trust-strip .container{display:grid;grid-template-columns:repeat(4,1fr)}
 .trust-item{padding:30px 26px 30px 0;border-right:1px solid var(--line);margin-right:26px}.trust-item:last-child{border:0;margin:0}
@@ -653,7 +654,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 @media print{.site-header,.mobile-panel,.page-progress,.site-footer{display:none}}
 </style></head><body><a class="skip-link" href="#main-content">Skip to content</a><div class="page-progress" aria-hidden="true"></div><header class="site-header" id="siteHeader"><div class="container nav"><a class="logo-wrap" href="index.html" aria-label="Bloomlinx Agency home"><img src="images/bloomlinx-logo.png" alt="Bloomlinx Agency" width="300" height="76"></a><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="how-we-work.html">How We Work</a><a href="creators.html">Creators</a><a href="campaign-fit.html">Studio</a><a href="about.html" aria-current="location">About</a></nav><a class="nav-cta" href="contact.html">Start a conversation <span class="button-arrow" aria-hidden="true">↗</span></a><button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu" aria-controls="mobilePanel" aria-expanded="false"><span class="menu-icon" aria-hidden="true"></span></button></div></header><nav class="mobile-panel" id="mobilePanel" aria-label="Mobile navigation" inert><a href="index.html">Home</a><a href="services.html">Services</a><a href="how-we-work.html">How We Work</a><a href="creators.html">Creators</a><a href="campaign-fit.html">Studio</a><a href="about.html" aria-current="location">About</a><a href="contact.html">Contact</a><p class="mobile-panel-note">Beauty × Creators × Culture<br>Built from Africa. Looking outward.</p></nav><main id="main-content">
 <section class="page-hero"><div class="container page-hero-grid"><div><span class="eyebrow">About Bloomlinx</span><h1 class="display-title">Built from Nigeria. <em>Designed for global markets.</em></h1><p>Bloomlinx is an early-stage beauty creator marketing agency being built around a simple belief: creator partnerships work better when they begin with the brand problem.</p></div><div class="page-hero-meta">Founded in Nigeria · 2026<br>Beauty · Creators · Culture</div></div></section>
-<section class="section"><div class="container about-founder"><div class="founder-portrait"><div class="monogram" aria-hidden="true"><span>DA</span></div></div><div class="founder-copy"><span class="eyebrow">The founder</span><h2 class="display-title">David <em>Adeyileka.</em></h2><p>David is building Bloomlinx from Nigeria as a beauty creator marketing company focused on connecting brands with relevant creators across Africa and international markets.</p><p>The ambition is larger than matching products to people. Bloomlinx is being built as a strategic and operational layer between beauty brands, creators, audiences and campaigns.</p></div></div></section>
+<section class="section"><div class="container about-founder"><div class="founder-portrait"><div class="monogram" aria-hidden="true"><span>DA</span></div><img class="photo-slot" src="images/founder/david-adeyileka.jpg" alt="David Adeyileka, founder of Bloomlinx" loading="lazy" onerror="this.remove()"></div><div class="founder-copy"><span class="eyebrow">The founder</span><h2 class="display-title">David <em>Adeyileka.</em></h2><p>David is building Bloomlinx from Nigeria as a beauty creator marketing company focused on connecting brands with relevant creators across Africa and international markets.</p><p>The ambition is larger than matching products to people. Bloomlinx is being built as a strategic and operational layer between beauty brands, creators, audiences and campaigns.</p></div></div></section>
 <section class="section editorial-dark"><div class="container"><div class="split-feature"><div class="feature-copy"><span class="eyebrow eyebrow-light">The belief</span><h2 class="display-title">Beauty is personal. <em>Marketing should be too.</em></h2><p>The best creator partnerships are not built by putting products in front of random audiences. They are built around relevance, trust, context and a clear reason for the partnership to exist.</p></div><div class="feature-image"><img  alt="" aria-hidden="true" src="images/art/art-4.svg"></div></div></div></section>
 <section class="section"><div class="container"><span class="eyebrow">Looking ahead</span><h2 class="display-title" style="font-size:clamp(52px,7vw,100px);max-width:1050px;margin:18px 0 28px">From a young company in Nigeria to a <em>global beauty network.</em></h2><p class="section-intro">The current site is the beginning. The long-term vision includes deeper creator intelligence, stronger campaign infrastructure, wider market coverage and technology that makes good partnerships easier to build.</p></div></section>
 </main><footer class="site-footer">
@@ -665,7 +666,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     </div>
     <div class="footer-bottom"><span>© <span id="currentYear">2026</span> Bloomlinx Agency. All rights reserved.</span><span>Independent by approach. Intentional by design.</span><a href="#top">Back to top ↑</a></div>
   </div>
-</footer><script><script>
+</footer><script>
 (() => {
   'use strict';
 
@@ -738,6 +739,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 
   // Campaign Fit Studio: builds an email-ready brief locally; no form submission or backend.
   const briefForm = document.getElementById('briefForm');
+  if (briefForm) {
   const preview = document.getElementById('briefPreview');
   const summary = document.getElementById('briefSummary');
   const emailBrief = document.getElementById('emailBrief');
@@ -837,6 +839,8 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     copyStatus.textContent = 'Your brief has been prepared as a text file on your device.';
   });
 
+  }
+
   // Keep the footer year current without requiring a yearly edit.
   document.getElementById('currentYear').textContent = new Date().getFullYear();
 
@@ -845,4 +849,4 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     img.addEventListener('error', () => img.classList.add('image-failed'), { once: true });
   });
 })();
-</script></script></body></html>
+</script></body></html>

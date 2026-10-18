@@ -633,6 +633,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 .monogram span{font-family:var(--serif);font-style:italic;font-size:clamp(84px,9vw,128px);color:var(--blush);letter-spacing:-.02em;margin-bottom:90px}
 .talent-card:hover .monogram{filter:brightness(1.08)}.founder-portrait{position:relative;overflow:hidden}
 .founder-portrait .monogram span{margin:0}
+.photo-slot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .trust-strip{border-bottom:1px solid var(--line);background:var(--paper)}
 .trust-strip .container{display:grid;grid-template-columns:repeat(4,1fr)}
 .trust-item{padding:30px 26px 30px 0;border-right:1px solid var(--line);margin-right:26px}.trust-item:last-child{border:0;margin:0}
@@ -666,7 +667,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     </div>
     <div class="footer-bottom"><span>© <span id="currentYear">2026</span> Bloomlinx Agency. All rights reserved.</span><span>Independent by approach. Intentional by design.</span><a href="#top">Back to top ↑</a></div>
   </div>
-</footer><script><script>
+</footer><script>
 (() => {
   'use strict';
 
@@ -739,6 +740,7 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
 
   // Campaign Fit Studio: builds an email-ready brief locally; no form submission or backend.
   const briefForm = document.getElementById('briefForm');
+  if (briefForm) {
   const preview = document.getElementById('briefPreview');
   const summary = document.getElementById('briefSummary');
   const emailBrief = document.getElementById('emailBrief');
@@ -838,6 +840,8 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     copyStatus.textContent = 'Your brief has been prepared as a text file on your device.';
   });
 
+  }
+
   // Keep the footer year current without requiring a yearly edit.
   document.getElementById('currentYear').textContent = new Date().getFullYear();
 
@@ -846,4 +850,4 @@ a:hover .button-arrow, button:hover .button-arrow { transform: translate(3px,-2p
     img.addEventListener('error', () => img.classList.add('image-failed'), { once: true });
   });
 })();
-</script></script></body></html>
+</script></body></html>
