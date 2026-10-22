@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bloomlinxagency.site/sitemap.xml
+Sitemap: https://bloomlinxagency.com/sitemap.xml
